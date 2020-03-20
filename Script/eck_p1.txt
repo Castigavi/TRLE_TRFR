@@ -1,0 +1,10 @@
+#END_PAGE#
+<FORMAT>
+#TITLE_FONT#=1
+#TITLE#=The Alchemists' notebook.
+#POP_IMAGE#=5
+<END_FORMAT>
+
+
+
+Opening mines was a good idea. This way I can further investigate the area around the monastery without raising suspicions. Lux Veritatis whelps don't even know what's going on down here and when the time comes, I will hunt them down and let them taste the agony I had endured in the pit. Once they are gone, nothing will stop me from getting the Obscura Paintings.

@@ -1,0 +1,468 @@
+_NEW Animating       The OCB in animating will be used only when you use an ACTION trigger to move animating.
+In this circustance the OCB value will be used as speed for movement of animating.
+About the value to type you should remember that 1 sector are 1024 units, and the value you'll type will be added 30 times for second to current coordinate.
+For example if you type like speed the value 40 the animating will be moved of 1200 units (40 x 30 fps) for second, and this distance is a bit bigger than one sector.
+Remark: If you let 0 in OCB of animating the default speed used by "move animating" trigger will be of 30 units. 
+
+
+_NEW Boats           Boats, rubber boat or motorboat, accetp the same type of OCB:
+
+You can use of following values or a sum of them to enable in same moment different features:
+
+1 = Show lights in front of boat
++2 = The boat will be not able to enable heavy trigger 
++4 = The boat will be not able to enable lara trigger
+
+
+
+Remark. For "Lara" trigger I mean the trigger may be activated by lara.
+
+About the value 2 and 4, you could use this limitation to create interesting situations in game: for example you can cover the bottom of a water room with trigger flipeffet:
+
+
+Lara. Kill Lara in <&>way -> Default death (vitality=0
+
+
+Using a common "trigger" as trigger type.
+
+Then you set in motor boat the value 
+4 (the boat will be not able to enable "Lara" trigger)
+
+More, it's better if you give to that water a dangerous look (like it was lava for example)
+Now in game Lara will be killed if she enter directly in that dangerous water, but if she across the water using motorboat she'll survive bec
+_NEW KeyPad          If you use the object stored in SWITCH_TYPE1 slot of ng.wad you'll be able to have a working Key Pad for your levels.
+
+With keypad you can create door requiring password (keycode) or control with custom trigger for the elevators present in your level.
+The keypad work fine in SWITCH_TYPE1 slot but probably it should work also in Switch_type 2 and 3.
+
+In OCB window of switch_type object you have to set a combination of following OCB to do work it like a keypad:
+
+0-9999 = Keycode. This is the number (secret code) that Lara will have to type to activate the switch.
+
+10001 - 10010 =  If you set as key code number a value in the range of 10001- 10010 this means it's required a single key (like for elevator). In this case, the number of ocb describes the max number that user will be able to type. For example if you set 10007, players will be able to hit only number upto 7 (1 - 7) 
+This work mode is used for elevator but in short time will be added other features using this method to pe
+_NEW ParallelBars    The parallel bar is a new object imported from Tomb Raider Chronicles.
+The ocb value set the power for final jump.
+If you set 0, lara performs a very short jump, while with 200 she jumps about to 2 sectors of distance.
+I presume that 100 = one sector, but it's only a supposition because the formula changes the horizzontal and vertical speed for jump in a complicated way and only these speeds affect the covered distance for final jump.
+
+Remarks: 
+* Looking the code, apparently the compute of jump power changes in according with orienting (facing) of Parallel bar object respect to lara. I.e. if lara comes from a direction the ocb value will be used in a way, while if lara comes from opposite direction, the ocb value will be computed in other way. This means you can change the power of jump also inverting the facing of parallel bar, rotating it by 180 degrees.
+I've not had time to perform many analysis about this supposition but the original chronicles code seems to work in this way.
+_NEW Pushable Object You can get all pushable objects treadable and climbable just set correct value in OCB field in the Object window of object. (Key 'O' in NGLE while the object is selected)
+
+0-31 = height of object collision. 1 click = 1 unit, so to set a pushable height 1 sector (4 clicks) you have to type 4
+You can create pushable height upto 7 sectors in this way.
+
+Then you can add one or more of following values to set corresponding feature:
+
+32 = The pushable obejcts with value 32 could be throwed in the empty. 
+Usage of this features requires some attention:
+For technical reason the engine requires to rotate (in immediate way) the facing of pushable to have always correct orienting (facing) of pushable in according with moving direction.
+
+You'll have no problems if your pushable has same textures on its sides and a simmetrical texture on top, while in other cases, when lara was pushing the object in the empty the pushable will change orienting to have correct facing in according with direc
+_NEW RollingBall     Now you can set in OCB field of Rollingball one or more (adding them) of following values:
+
+1 = Silent mode.
+Disable sound and earthquake. It is useful to use trick of hidden rollingball to enable more special triggers in sequence, avoiding sound and moving view.
+
+2 = Kill Enemies.
+Rollingball will kill all creatures it touches while it is moving.
+
+4 = Active with pushing.
+Adding the value 4 the rolling will be activated when lara pushes it.
+In this situation it's not necessary place any trigger for rollingball.
+With ocb 4 you can place rolling ball also on flat sector (non-sloped sector) just there are slopes on bounding sectors.
+In this way lara will be able to choice the direction where move it.
+
+Remark: this ocb requires the Lara's animation 
+number 316 in your wad. Not all standard wads have this animation, anyway you may find it in catacomb.wad
+If animation 316 is missing in your wad it will happen nothing when lara hits Action closed to rollingball.
+
+
+
+
+
+8 = Acti
+_NEW Static Objects  From TRNG version 1.1.8.7 you can set in each static object some OCB codes to set following features:
+
+4  = Disable collision. Lara could pass across the static
+
+8  = Set Glass Transparence. The static will have a glass transparency effect
+
+16 = Set Ice Transparence. The static will have a light transparence, like the ice
+
+32 = Damage Lara on physical contact. The static injures lara if she touches it. The damage removes 10 hp to lara (full vitality= 1000) anyway you can change this value using CUST_SET_STATIC_DAMAGE in Customize script command.
+Remark: remember that this damage will be continuosly applied while lara is touching the static, this means that also a little damage could kill lara in short time.
+
+64 = Burns Lara on physical contact. Lara will be burned anyway she will have yet some time to search water to save her.
+
+128 = Explode killing Lara on physical contact. With this ocb you can transform this static in a sort of mine.
+Remark: if you use this ocb code you s
+_NEW Teeth_Spikes    Really the ocb to set in TEETH_SPIKES are the same of old engine, anyway if you want enable teeth_spikes type tomb raider 1 where Lara is able to across if she moves slowly, you have to insert the OCB = 20.
+Ocb 20 means: spikes point to north and static spikes
+
+Then you have to add this line in your script.txt file in [Level] section:
+
+Enemy= TEETH_SPIKES, IGNORE, IGNORE, IGNORE, EXTRA_TEETH_NO_DAMAGE_ON_WALKING
+
+The EXTRA_TEETH_NO_DAMAGE_ON_WALKING flag means: the teeth spikes will work like TR1 spikes.
+
+
+
+AI_FOLLOW            If you put two or more AI_FOLLOW (other that is below the moveable) you must set same OCB value for start AI_FOLLOW and next AI_FOLLOW.
+Differently the following AI_FOLLOW objects will increase the ocb value of 1.
+For example:
+
+First AI_FOLLOW  = OCB 1 (below the moveable you want move)
+Second AI_FOLLOW = OCB 1 (where moveable will go)
+Third AI_FOLLOW = OCB 2 (further target)
+Fourth AI_FOLLOW  = OCB 3 (ect)
+
+Remark:
+AI_FOLLOWs used for move enemy jeep should start from value -2 and follow above rule.
+
+
+
+Amber light          1 = to explode it
+
+
+Animated objects     666 = to stop animation when lara goes out of triggering square
+
+
+Baddy 1              Baddy 2
+1 = Roll Right. He rolls about a block so this is good for triggering as Lara comes up to a doorway 
+2 = Jump Left. As above 
+3 = Ducked 
+4 = Climb up 4 clicks. Make sure the origin of the baddy is 4 clicks below the block he's about to enter
+10 += To give to baddy unlimited ammo
+
+You can set a sequence of baddyes (type 1) adding number 1000 for first baddy, 2000 for second ect.
+In this way the second baddy will be activacted only when first baddy will be killed.
+
+1000 += set as first baddy
+2000 += set as second baddy
+ect.
+
+Same method could be used for baddy 2 but in this case you should use multiple of 100:
+100 += set as first baddy 2
+200 += set as second baddy 2
+300 += set as third baddy 2
+
+Remark: if you want create two different enemy sequences in same level you must create an "hole" value bigger than 1000 (or 100 for baddy_2)
+For example:
+We say you want then baddy 1 (that we named it "Bob") had other two enemies that will appears when he will be killed.
+Chain                1 = to hurt lara
+
+
+Clockwork Beetle     Insert 4 in both clockwork beetle combos (mechanical scarab and key)
+
+
+
+Dog                  0 = normal (it will become visible only after triggering)
+1 = Dog immediatly visible on ground (standing down) and it will move when triggered
+
+
+Door Type 1          If door is a double door you must set:
+
+In left door the value 269
+In right door the value 276
+
+(From example in tut1 level)
+
+
+Door type 2          Enter all 1-5 buttons to make door opened at start.
+
+Remark: setting al five buttons the further following sequence for door with trigger and antitrigger could don't work properly.
+If you mean use antitrigger/trigger sequence for door it's better don't hit all buttons but let them unpressed and trigger normally the door using a hidden trigger where lara will step over before reaching the door.
+
+
+Door type 3          1 = Prevents door opening. Used in conjunction with cog switch to have the door opening slowly while lara pull the cog.
+2= To open with a crowbar
+
+
+EarthQuake           Remark: Earth quake is nullmesh object placed and triggered to create earthquake effects ­ rumbling and shaking.
+
+333 = for 16 seconds (sound but not shaking)
+888 = for a 5 second quake and sound
+
+
+
+
+Emitters             It often pressing all five Buttons you get the object immediatly visibile without need of triggering
+
+
+Enemy Jeep           To handle the enemy jeep you must use AI_FOLLOW objects. (See ocb for AI_FOLLOW objects in this table)
+To stop the enemy jeep you must use a FlipEffect = 30
+
+Remark:
+In level "Desert RailRoad" of The Last Revelation enemy jeeps had following OCB values:
+0 (zero)
+101
+102
+103
+104
+
+
+
+
+Falling blocks       2 =  don't collapse when you stand on them but only when they will be triggered
+
+
+Fish storm (pirana)  In ocb type the number of fishes (max 128)
+
+
+Flame Emitter 1      Many values are the same of flame emitters 2 and 3.
+Here there is the list of ocb values used for Flame Emitter in The Last Revelation game: -59, -51, -43, -7, -2, 1, 2, 3, 4, 5, 6, 7
+
+
+Flame Emitter 2      1 = will make the flame half the size of normal 
+2 = to make the flame move along in the direction the cone is pointing
+3 = makes a very small light
+
+Note: Will not cause death.
+
+Other values used in The Last Revelation game: -1, -3, -7, -5, 2, 123
+
+
+Flame Emitter 3      0 =  it is the flame used on the special "oil" water in the palace levels. Will cause death
+1,2,3,4 =  will change the flame into the blue "lightning" as in the Karnak level. (no death)
+
+888 = This bit has been tryed and it seems can generate a blue light following lara.
+However sometimes there are troubles: the light sometimes ignores lara and go to room 0, other times the light goes to center of current level.
+Probably it's necessary set another flame emitter 3 as "target" in same room where you put first flame emitter.
+It seems that this blue spirit is not able to kill Lara
+
+
+
+
+
+Flyby Camera         0 = Snap to start of sequence from Lara cam
+1 = Not used
+2 = Loop for infinity
+3 = Track Lara cam
+4 = Target Lara's last position before camera trigger
+5 = Target Lara's current moving position
+6 = Snap back to Lara at end of sequence
+7 = Cut-Cam, Jumps to a specified camera in the same sequence (Timer = cam number to jump to)
+8 = Hold camera (timer = 30 X Number of seconds)
+9 = Disale look key break out.
+10 = Disable Lara control
+11 = Enable Lara control
+12 = Not used
+13 = Not used
+14 = Activate heavy trigger
+15 = Not used
+
+
+Guide                Remark: The Guide must be used with the "Follow AI" or he will run around in circles.
+
+BB 1 = Light Torch
+BB 2 =  Activate Trap (as belove)
+BB 3 + BB 5 = Read Inscription (put a heavy trigger under the AI point if you want something to happen when he reads it)
+BB 4 =  Light Petrol (as above)
+BB 5 = Grab Torch
+
+All Bit Buttons... Make him disappear
+
+Remark:
+In level "Valley Of The Kings" of The Last Revelation guide had values:
+9000
+13000
+
+
+
+Hammer               1 = normal hammer ( hammer smashes, chain lifted then smashes again, and so on... ) 
+2 = Hammer smashes while lara stays on the trigger, when she steps of, the hammer will remain in his position, so if it was lifted up it will just stop and stay that way. makes explosive sound when smashes 
+3 = same as above but when lara gets of the trigger it first gets lifted to the ceiling and then it stops. 
+
+
+
+Helicopter (flying)  Flying helicopter has internal name "Animation 1" and you find it in "Desert Railroad" of The Last Revelation.
+To do fly it you must set ocb = 666 and use AI_FOLLOW is same way of Enemy Jeep (see AI_FOLLOW and Enemy jeep descriptions)
+
+
+Helicopter (Mine)    "Mine" helicopter is the "static" half (only a side of meshs are visible) helicopter you find in Death City. Lara will can destroy it shotting.
+
+Enter 1 in OCB of the helicopter. To make it explode, use SHATTER3 and set it up as per room 73. The fuel can does not sit directly on the trigger ­ it won't activate the heavy trigger if it does.
+
+Enter 0 in OCB of the helicoter if you want use only "mined field"
+With OCB = 0 the helicopter will be invisible and at its placement it will be created a mine field of 6 x 6 sectors. If lara walks over the mine field she will explode and die.
+Remark: the mined field is not correctly aligned with secotor bounding.
+Praticall it has a size of full 5 x 5 sectors zone + a border of 1/2 sector of width.
+
+
+Horseman             Horse
+If you want have two or more couples of horseman-horse you must set for each couple the same OCB value.
+For example:
+
+Horseman1 = OCB 1
+Horseman2 = OCB 2
+Horse1 = OCB 1
+Horse2 = OCB 2
+
+
+
+Jump Switch          Set 1 as ocb if you want have a reability of lever after 'timer' seconds.
+For example if you in switch trigger insert in timer field the value 12 and put '1' in ocb of jump switch the trigger (for example for a door) will be activated for 12 seconds, then this time, the door will be closed and the lever will go up newly.
+Remark: not all 'jump switches' have reability function, you should use jump switch you find in guard.wad file.
+
+
+
+Lightning conductor  Type level of damages when lara will be hit by it
+
+0 = No damage
+1 - 4 = increasing damage
+
+
+Little Beetles       0 - 128 = Total number of scarab you want
+1000 += Scarab appear from the floor
+2000 += Scarab appear from the ceiling
+4000 += Scarab slow release followed by a gush
+
+Remarks:
+- To clear all active scarabs, use a Flipeffect trigger with a value of 31.
+- The beetle swarm was used in conjunction with either PUZZLE_ITEM12 or PICKUP_ITEM1, both of which are scarabs that attach to the wall and require a crowbar to pick off. The swarm of beetles sometimes shoots out of the "hole" behind the wall scarab. A special texture tile is used to create the illusion that they come from the hole in the wall. To do this you simply designate the trigger for PUZZLE_ITEM12 or PICKUP_ITEM1 as a key trigger (and type in an OCB setting of 2 to position it on the wall in-game), then trigger the LITTLE_BEETLE to the same square. (Raise LITTLE_BEETLE up to the height of the "hole") Make sure you have the correct settings in the OCB menu for the LITTLE_BEETLE and that you have left a crowbar somewhere as a pic
+Locust Swarm (Fish)  It says "fish" but it is really the locust swarm ­ can be deadly if you enter a high enough value in the OCB data field...somewhere around 96 is the limit.
+OCB code defines the number of locusts.
+OCB values used in the last revelation were: 12, 20 and 25
+
+Remark:
+Locust swarm can set heavy triggers in motorbike path or release a swarm from a shatter object. 
+
+
+Mummy                2 = Visible on ground, it will be activated after trigger and when lara goes near to it
+
+
+
+Music Scroll's       -422 = Lara will place the scroll on the "puzzle hole 2" and play the Lyre(you have to put the Lyre to the left of the puzzle hole)
+Remark: you must set -422 value also in puzzle hole 2 object.
+
+
+Pickups Items        0 = the object is on the floor (pickup in an old stylee)
+1 = the object is `hidden' (Lara plays a stick hand in wall type animation)
+2 = the object is attached to a wall (Lara has to use the crowbar)
+3 = the object is on a high pedestal
+4 = the object is on a low pedestal
+64 +=  Add 64 to any of the above if you want the item activates a pickup trigger.
+
+Remark:
+Also flag value:
+128 +=
+is used in The Last Revelation but I don't know the meaning.
+
+
+Pulley               OCB set when times lara will pull the rope to trigger somewhat.
+
+Example:
+
+1 = Just pull one time to trigger ..
+2 = it needs pull two times to trigger
+ect.
+
+
+Puzzle Holes         999 =  turns off `collision' from the `puzzle done' object.
+Without it, an `invisible' door would prevent Lara from go through.
+
+
+
+Raising Block 1      1 = to activate rumble effect
+
+Enter 1-5 in OCB to elevate. 
+
+
+Raising block 2      Enter "2" in OCB to lower the block 
+Press all five BB buttons in OCB to lower. 
+
+
+Sentry Gun           Enter 1 in OCB to jam the gun, no entry and the gun fires at Lara as long as she is "in range". Place a SMOKE_EMMITER_BLACK on the same square for added effect (no trigger necessary).
+
+
+Seth Blade           Enter negative number on OCB to delay triggering. Adding increments of 10 will delay by one second for each 10 units.
+
+
+Skeleton             Remark: 
+- You can change the initial animations by setting the trigger flags as listed below. If you don't set trigger flags the skeleton will come up out of the ground as normal. When placed, he is 20 clicks below the floor elevation.
+- Put an AI_GUARD object on the skeleton to put him on guard. 
+
+1 = Jump Right. He jumps about a block
+2 = Jump Left. As above
+3 = Playing dead. This skeleton is visible (lying down) before being triggered and only gets up when triggered
+
+
+
+
+Smashable Bike Wall  Press buttons 1 through 5 in OCB to activate.
+
+
+Sphinx (Like a bull) 1 = to get immediate attack vs Lara
+
+
+Steam Emitter        888 =  to make steam escape sideways in the direction of the cone.
+
+Note: Will cause death
+
+
+
+Switch Type 1/2      0 = Animation where lara pull up a little switch
+1 = to make this a "reach in the hole" to find a pick-up. (*)
+2 = to make this a "reach in hole, open a door" switch
+3 = to make Lara do the "push wall switch animation".
+-1 = Animation where lara reachs in the low hole a pickup. Before pickuping up the item, lara will look in the hole. (different animation but same target of ocb 1.)
+(*) You must set same OCB code ( = 1) also in item in the hole
+
+
+Switch type 7        Switch type 7 are shatterable switch (action will be triggered when lara shot them)
+In ocb window press all buttons 1 through 5 in OCB.
+
+
+Teeth Spikes         Remark: Vertical in Room Edit above view Horizontal
+
+0 = Pointing south 
+1 = Pointing south west 
+2 = Pointing west
+3 = Pointing north west
+4 = Pointing north
+5 = Pointing north east
+6 = Pointing east
+7 = Pointing south east
+8 = Pointing south
+9 = Pointing south west
+10 = Pointing west
+11 = Pointing north west
+12 = Pointing north
+13 = Pointing north east
+14 = Pointing east
+15 = Pointing south east
+16 +=  You can also add a value of 16 to the above to make the spikes stick out constantly (like the old TR spikes) 
+32 += Adding 32 to the above will force the spikes out once and then retract forever.
+
+Remark: if you want use Teeth Spikes in conjunction with Mapper or ClockWork Beetle you must set OCB 4 (pointing north)
+
+
+
+Trapdoor 1           Enter 1-5 to make door open then close.
+
+Note: Set trigger timer to amount of seconds for door to be open
+
+
+TwoBlock Platform    0 - 15 = Movement speed 
+16 * X +=  where X is number of clicks for elevation.
+
+Set trigger type to "Dummy".
+
+
+Wall Scarab          2 = Placed on walls.
+
+Remark:  Often used with the scarab beetle swarm and also can be part of 4 large beetles needed for the Pyramid Puzzle in Cleopatra's Palaces. Don't forget about placing the crowbar!
+
+
+Waterfalls           Enter 668 to can antitrigger it. (You must also set [Invisible] button to get trigger/antitrigger for waterfall)
+
+Other valid value is "2" used to get slow down the start effect. It has been used in level "The Tomb of Semerkhet" to simulate the yellow laser ray.
+Also value  777 is used in the last revelation.
+
+
+Wraith 2             2 = it dies on contact with water
+
+

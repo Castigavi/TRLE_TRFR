@@ -1,0 +1,120 @@
+*****************************
+* ENNEMIES
+*****************************
+AHMET                    6   88  89  90  91  92  93
+BABOON_INV               1   317
+BABOON_NORMAL            7   164 165 166 167 168 317 318
+BABOON_SILENT            1   317
+BADDY_1                  9   254 256 257 258 259 260 261 262 263
+BADDY_2                  9   254 256 257 258 259 260 261 262 263
+BAT                      3   169 170 171
+BIG_BEETLE               3   14  15  16
+CROCODILE                3   73  80  81
+DEMIGOD1                 5   242 243 244 245 246
+DEMIGOD2                 4   242 247 248 249
+DEMIGOD3                 4   242 249 250 252
+DOG                      6   175 176 178 179 180 181
+FISH                     1   120
+HAMMERHEAD               2   268 277
+HARPY                    7   266 271 272 273 274 275 276
+HORSE                    3   222 289 298
+HORSEMAN                 5   301 302 303 304 305
+KNIGHT_TEMPLAR           6   223 224 225 226 227 228
+MUMMY                    4   229 230 231 232
+MUTANT                   4   138 139 140 141
+SAS                      3   237 265 267
+SCORPION                 4   216 217 218 219
+SETHA                    9   276 296 297 298 299 300 316 322 324
+SKELETON                 5   187 188 190 191 193
+SMALL_SCORPION           1   220
+SPHINX                   3   172 173 174
+WILD_BOAR                5   206 207 209 210 211
+WRAITH                   1   184
+*****************************
+* FRIENDS
+*****************************
+GUIDE                    4   94  194 239 357
+TROOPS                   2   259 265
+VON_CROY                 2   119 281
+*****************************
+* MISC
+*****************************
+CLOCKWORK_BEETLE         3   100 101 102
+LIGHTNING_CONDUCTOR      1   183
+MAPPER                   5   306 307 308 309 310
+PUSHABLE_OBJECT          2   11  63
+SCALES                   3   97  98  99
+*****************************
+* VEHICLES
+*****************************
+JEEP                     10  152 153 154 155 156 195 196 201 202 203
+MOTORBIKE                9   130 131 132 133 134 135 137 366 367
+*****************************
+* DOORS
+*****************************
+DOUBLE_DOORS             2   84  85
+GARAGE DOOR  (TYPE1-9)   2   336 361
+GENERAL DOOR (TYPE1-9)   2   63  64
+KICK_DOOR                1   64
+PUSHPULL_DOOR            1   64
+PYRAMID DOOR (PUZZLE)    1   86
+ROLLING DOOR (TYPE1-9)   1   158
+SARCOPHAGUS              1   48
+SPHINX DOOR  (ANIMATING) 2   295 353
+TRAIN DOOR   (TYPE1-9)   2   279 280
+TRAPDOOR                 2   161 162
+UNDERWATER_DOOR          1   50
+*****************************
+* SWITCHES
+*****************************
+COG_SWITCH               2   57  328
+EYE SWITCH (ANIMATING)   1   25
+JUMP_SWITCH              1   240
+LEVER_SWITCH             3   328 337 338
+LION HEAD SWITCH (TYPE7) 1   75
+PULLEY                   1   342
+UNDERWATER_SWITCH        1   61
+*****************************
+* TRAPS
+*****************************
+BIRD_BLADE               2   312 313
+CATWALK_BLADE            1   286
+CHAIN (PENDULUM BLADE)   1   68
+CHAIN (FROM 'LIBRARY')   1   151
+COG                      1   40
+DART_EMITTER             1   325
+FALLING_BLOCK (WOOD)     1   22
+FALLING_BLOCK (STONE)    2   66  67
+FLAME_EMITTER            1   368
+FLOOR_4BLADES            2   311 312
+HAMMER                   3   57  58  314
+JOBY_SPIKES              1   20
+MOVING_BLADE             2   311 312
+PLINTH_BLADE             2   311 313
+PLOUGH                   1   287
+ROLLINGBALL              2   122 147
+ROOF_4BLADES             2   311 312
+SENTRY_GUN               1   358
+SETH_BLADE               3   311 312 313
+SQUISHY_BLOCK1           1   323
+SPIKEBALL                2   161 341
+STARGATE                 2   23  311
+TEETH_SPIKES             1   343
+*****************************
+* LOOPS
+*****************************
+BLOOD LOOP               1   129
+CRICKET LOOP             1   21
+ELECTRIC LOOP            1   197
+FOUNTAIN LOOP            1   177
+HELICOPTER LOOP          1   65
+LOCUSTS LOOP (FISH)      1   120
+SAND LOOP                1   344
+WATERFALL LOOP           1   79
+*****************************
+* LARA
+*****************************
+LARA Part 1              20  0   1   2   3   4   5   6   7   8   9   10  17  18  24  26  28  29  30  31  32
+LARA Part 2              20  33  34  35  36  39  41  42  43  44  45  46  47  49  51  52  53  54  55  56  70
+LARA Part 3              19  95  116 117 145 288 290 291 292 294 326 339 340 342 345 348 349 350 351 369
+LARA WEAPONS             14  8   43  44  45  49  77  78  105 106 121 123 124 125 235

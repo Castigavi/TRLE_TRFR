@@ -1,0 +1,7 @@
+#END_PAGE#
+<FORMAT>
+#TITLE_FONT#=1
+#TITLE#=From miner's diary, part two.
+<END_FORMAT>
+
+The technician is gone and with him another fuse. Apparently the last time anyone saw him was when he was heading to boss's office in the farthest part of the mine. No one has ever seen him since then. Maybe he was fired? The lifts still don't work, but the boss seems to not care anymore. He is often seen wandering around mines with that strange, evil grin on his face. Whenever I see it I really get nervous. He has probably forgotten about the lifts, but just in case I have hidden the last plug in one of the boxes within the room with the second lift.

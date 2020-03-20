@@ -1,0 +1,362 @@
+[Strings]
+Camboya, 1984
+Año 2000, en algun lugar en Egipto
+Pantalla de carga
+Nivel Tutorial Jugable
+La tumba de Set
+Cámaras de enterramiento
+El Valle de los Reyes
+VR5
+El templo de Karnak
+La gran sala hipóstila
+El lago sagrado
+Lago 2
+La tumba de Semerkhet
+El custodio de Semerkhet
+Ferrocarril desierto
+Alejandría
+Ruinas de la costa
+Faros, templo de Isis
+Palacios de Cleopatra
+Catacumbas
+Templo de Poseidón
+La biblioteca perdida
+Bóvedas de la biblioteca
+La Ciudad de los Muertos
+Trincheras
+Las cámaras de Tulun
+La puerta de la Ciudadela
+Bazar callejero
+Ciudadela
+El complejo de la Esfinge
+El templo del valle
+Bajo la Esfinge
+La pirámide de Menkaure
+Interior de la pirámide de Menkaure
+Las Mastabas
+La Gran Pirámide
+Las Pirámides de las Reinas Khufus
+Interior de la Gran Pirámide
+Templo de Horus
+Ilimitada %s
+UTILIZAR
+SELECCIONAR MUNICIÓN
+COMBINAR
+SEPARAR
+EQUIPAR
+COMBINAR CON
+CARGAR PARTIDA
+GUARDAR PARTIDA
+EXAMINAR
+\x8F Más
+\x8F Seleccionar munición
+\x8F Seleccionar opción
+\x8F Combinar
+Uzi
+Pistolas
+Escopeta
+Revólver
+Revólver + Visión láser
+Ballesta
+Ballesta + Visión láser
+Lanzagranadas
+Munición normal para escopeta
+Munición de tiro largo para escopeta
+Munición normal para lanzagranadas
+Munición súper para lanzagranadas
+Munición relámpago para lanzagranadas
+Munición normal para ballesta
+Munición venenosa para ballesta
+Munición explosiva ballesta
+Munición de revólver
+Munición de Uzi
+munición de pistola
+Visión láser
+Botiquín grande
+Botiquín pequeño
+Prismáticos
+Bengala
+Brújula
+Cargar
+Guardar
+Odre pequeño (vacío)
+Odre pequeño de 1 litro
+Odre pequeño de 2 litros
+Odre pequeño de 3 litros
+Odre grande (vacío)
+Odre grande de 1 litro
+Odre grande de 2 litros
+Odre grande de 3 litros
+Odre grande de 4 litros
+Odre grande de 5 litros
+Palanca
+Búsqueda de arma 1:Amuleto de Horus
+Búsqueda de arma 2:Coraza
+Búsqueda de arma 3:Greba izquierda
+Búsqueda de arma 4:Greba derecha
+Búsqueda de arma 5:Guante izquierdo
+Búsqueda de arma 6:Guante derecho
+Escarabajo mecánico
+Escarabajo mecánico con llave
+Llave
+Llave del arsenal
+Llaves de la guardia
+Trozo de papel
+Piedra de Maat
+Piedra de Khepri
+Piedra de Atum
+Piedra de Re
+Llave del pozo norte
+Llave del pozo sur
+Llave del pozo este
+Escarabajo negro
+Escarabajo roto
+Gafas rotas
+Pergamino circular de fuego
+Llaves del coche
+Pergamino musical
+Moneda
+Ojo de Horus
+Ojo
+Las arenas eternas
+La mano de Orión
+La mano de Sirius
+El talismán de escarabajo
+La serpiente de oro
+El cráneo de oro
+Espada de metal
+El asa de madera
+La llave de plata
+Llave del pozo oeste
+Pala
+Escritura sagrada
+Vasija funeraria 1
+Vasija funeraria 2
+Diosa del sol
+Disco del sol
+Talismán del sol
+Cartucho 1
+Cartucho 2
+Cartucho Ba
+Cartucho Ra
+Vraeus de oro
+Llave del guardián
+La llave de la sala hipóstila
+Llave del templo
+Alimentador de óxido nitroso
+Tubería de válvula
+Bidón de óxido nitroso
+Gato del coche
+Cuerpo del gato del coche
+Asa
+Llave del techo
+Llave del código del arma
+Detonador de minas
+Cuerpo del detonador de minas
+Datos de posición de minas
+Tridente
+Estrella de oro
+Gancho y poste
+Gancho de pared
+Asa rota
+Efigie de Hathor
+Asa decorada
+Guardián del portal
+Gema de caballista
+Nudo de Faros
+Pilar de Faros
+Símbolo
+Llave de la puerta
+Las reglas del Senet
+Saco de arena
+Bidón
+Sí
+No
+Cargar partida
+Nueva partida
+Pausa
+Selecciona la partida guardada
+Selecciona la partida para guardarla
+FIN DEL JUEGO
+Guardar partida
+Salir a la pantalla principal
+MODO DEMO
+Posición actual
+Estadísticas
+Distancia recorrida
+Munición utilizada
+Secretos encontrados
+Lugar
+Paquetes de salud utilizados
+Tiempo necesitado
+días
+de
+Acción
+Utilizar arma
+Saltar
+Rodar
+Caminar
+Mirar
+Agacharse
+Correr
+Inventario
+REGLAS1:Para ganar la partida, toma todas las\npiezas del tablero colocándolas en el\núltimo cuadrado ankh. Cuando llegue tu turno,\ngira los palos. Tu lanzamiento es el número\nde lados blancos a la vista.
+REGLAS2:Si no se ven lados blancos, tu lanzamiento\nes de seis. Si tu lanzamiento es un seis o si\nalcanzas un cuadrado ankh obtienes un\nlanzamiento extra. Si alcanzas la ficha de\nun adversario, tendrá que volver a empezar.
+PETEPOO:Para que las serpientes\nvivan, primero tendrás que\ncalmarlas a todas. irrítalas\npor turnos, y el círculo\narderá por completo.
+[PSXStrings]
+BSELECT:\x8F Seleccionar
+BCANCEL:\x90 Cancelar
+BGOBACK:Volver \x90
+BOK:\x8F Aceptar
+CANCELB:Cancelar \x90
+TARJMEM:BESLES-02242
+INSERTAR:Inserta una MEMORY CARD\nen la ranura de MEMORY CARD 1
+COMPROBAR:Comprobar la MEMORY CARD.
+FORMATO:La MEMORY CARD no está formateada\n¿Deseas formatearla?
+CARGAR:Cargar datos\nNo quitar la MEMORY CARD
+GUARDAR:Guardar datos\nNo quitar la MEMORY CARD
+FORMATEAR:Formatear la MEMORY CARD\nNo quitar la MEMORY CARD
+SOBREESCRIBIR:¿Sobreescribir datos en la MEMORY CARD?
+NO FORMATEADA:La MEMORY CARD no está formateada\nInsertar la MEMORY CARD formateada
+NO HAY ESPACIO:La MEMORY CARD no tiene suficientes\nbloques libres\n\nInsertar una MEMORY CARD con al menos\ndos bloques libres
+NO HAY JUEGO:No existe Tomb Raider IV\nGuardar partidas en la MEMORY CARD\nen la ranura de MEMORY CARD 1
+CARGANDO
+Cargar OK
+Guardado OK
+Formato OK
+Error al cargar
+Error al guardar
+Error de formato
+Vacío
+Mando eliminado
+Continuar
+Salir
+Configuración del juego
+Opciones de mando
+¿Estás seguro de que deseas salir?
+Ajustar pantalla
+VOLFX:Volumen SFX\t\t\t
+VOLMéSIC:Volumen música\t\t\t
+Utilizar botones de dirección\npara ajustar pantalla
+Configurar mandos
+Configuración n
+Vibración activada
+Vibración desactivada
+Enfoque manual
+Enfoque automático
+MANDO:\t\t\t\t\t\t\t\t\n\n\n\n\n
+MANDO2:\t\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n
+Programación
+Programación adicional
+Programación de la IA
+Animaciones
+Diseño de niveles
+Secuencias FMV
+Gráficos adicionales
+Música y efectos de sonido
+Historia
+Guión
+Productor
+Control de calidad
+Productores ejecutivos
+Efectos de sonido adicionales
+EQUIPO1:Chris Coupe
+EQUIPO2:Martin Gibbins
+EQUIPO3:Derek Leigh-Gilchrist
+EQUIPO4:Tom Scutt
+EQUIPO5:Richard Flower
+EQUIPO6:Martin Jensen
+EQUIPO7:Phil Chapman
+EQUIPO8:Jerr O'Carroll
+EQUIPO9:Joby Wood
+EQUIPO10:Andrea Cordella
+EQUIPO11:Pete Duncan
+EQUIPO12:Jamie Morton
+EQUIPO13:Richard Morton
+EQUIPO14:Andy Sandham
+EQUIPO15:Peter Barnard
+EQUIPO16:David Reading
+EQUIPO17:Matt Furniss
+EQUIPO18:Simeon Furniss
+EQUIPO19:John Lilley
+EQUIPO20:Damon Godley
+EQUIPO21:Mark Hazelton
+EQUIPO22:Steve Huckle
+EQUIPO23:Steve Hawkes
+EQUIPO24:Darren Wakeman
+EQUIPO25:Peter Connelly
+EQUIPO26:Martin Iveson
+EQUIPO27:Hope Canton
+EQUIPO28:Dr Kieron O'Hara
+EQUIPO29:Troy Horton
+EQUIPO30:Tiziano Cirillo
+EQUIPO31:Nick Connolly
+EQUIPO32:Hayos Fatunmbi
+EQUIPO33:Paul Field
+EQUIPO34:Steve Wakeman
+EQUIPO35:Dave Ward
+EQUIPO36:Jason Churchman
+EQUIPO37:Jeremy H. Smith
+EQUIPO38:Adrian Smith
+EQUIPO39:Clint Nembhard
+EQUIPO40:Benjamin Twose
+[PCStrings]
+Programación PC
+Programadores
+Programación adicional
+Continuar
+Opciones
+Ranura vacía
+Volumen de la música
+Volumen efectos de sonido
+Calidad del sonido
+Baja
+Media
+Alta
+Enfoque
+Manual
+Automático
+Adaptador de gráficos
+Configuración de salida
+Resolución de salida
+Profundidad de los bits de textura
+Aceptar
+Cancelar
+Aceleración de hardware
+Modo de software
+Efectos volumétricos
+Filtrado bilineal
+Asignaciones Bump
+Texturas de baja resolución
+Mapas bump de baja resolución
+Dispositivo de sonido
+Desactivar
+Bit\t\t\t; As In 16 Bit
+Pantalla completa
+En ventana
+Opciones de renderizado
+No se ha instalado la tarjeta de sonido
+Error al configurar DirectX
+Salir
+Configuración de control
+Utilizar señal luminosa
+Método de control
+Ratón
+Teclado
+Joystick
+Esperando
+Reiniciar
+Guardar configuración
+Guardado OK
+Moverse a la izquierda
+Moverse a la derecha
+Jugar
+Configuración
+Instalación
+Desinstalar
+Léeme
+Modo demo - Pulsa Esc para salir
+Seleccionar nivel
+No FMV
+OEM1:\n\n\nCongratulations on reaching the end\nof this special version of the game.\nIf you want to continue Lara's adventure,\nyou need to purchase the full version.\nRemember to keep your save game files,\nto continue from where you are now.\nFor details of transferring your save game\nfiles refer to the readme file,\nthis is accessed via the task bar.
+THE LAST STRING ENTRY

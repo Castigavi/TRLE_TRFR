@@ -1,0 +1,18 @@
+GlobalTrigger=	4, IGNORE, GT_CONDITION_GROUP, 11, 9, 10, IGNORE
+TriggerGroup=	9, $8000, 124, $1E
+TriggerGroup=	10, $2000, 72, $82
+
+GlobalTrigger=	1, IGNORE, GT_CONDITION_GROUP, 11, 1, 2, 3
+TriggerGroup=	1, $8000, 11, $23, $8000, 8, $10D
+TriggerGroup=	2, $2000, 51, $3, $2000, 51, $4
+TriggerGroup=	3, $2000, 52, $4, $2000, 52, $3
+TriggerGroup=	4, $8000, 11, $23
+Parameters=	PARAM_ROTATE_ITEM, 1, IGNORE, 174, ROTH_INV_CLOCKWISE, $4000, $2000
+Parameters=	PARAM_ROTATE_ITEM, 2, IGNORE, 174, ROTH_CLOCKWISE, $4000, $2000
+;
+GlobalTrigger=	2, IGNORE, GT_CONDITION_GROUP, 11, 5, 6, IGNORE
+TriggerGroup=	5, $8000, 11, $23, $8000, 4, $10D, $8000 + TGROUP_NOT, 5, $1F, $8000 + TGROUP_NOT, 30, $1E, $8000 + TGROUP_NOT, 9, $1F, $8000 + TGROUP_NOT, 10, $1F
+TriggerGroup=	6, $2000, 77, $211E
+GlobalTrigger=	3, IGNORE, GT_CONDITION_GROUP, 11, 7, 8, IGNORE
+TriggerGroup=	7, $8000, 11, $23, $8000, 4, $D, $8000, 5, $1F, $8000 + TGROUP_NOT, 9, $1F, $8000 + TGROUP_NOT, 10, $1F
+TriggerGroup=	8, $2000, 77, $2120

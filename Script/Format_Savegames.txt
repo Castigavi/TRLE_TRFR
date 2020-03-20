@@ -1,0 +1,12 @@
+Internal Number:  (SAVE-NUMBER)
+Secrets:          (SECRETS)
+Large Medipacks:  (L-PACKS)
+Small Medipacks:  (S-PACKS)
+Flares:           (FLARES)
+Date:     (DATE-TIME)
+Distance: (KM-DISTANCE) Km and (METERS-DISTANCE) meters
+
+Weapons: (WEAPONS)
+
+
+

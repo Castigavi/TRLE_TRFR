@@ -1,0 +1,8 @@
+#END_PAGE#
+<FORMAT>
+#TITLE_FONT#=1
+#TITLE#=From miner's diary, part six.
+<END_FORMAT>
+
+They took me to the infirmary to take a rest. The next day their abbot came to see me. He asked about the mines. I told him everything. Strange thing is he wasn't surprised, but when I told him about the boss his face turned into a mask of an old, tired man.
+"So he has found us," he said to himself.

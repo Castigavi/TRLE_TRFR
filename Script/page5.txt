@@ -1,0 +1,7 @@
+#END_PAGE#
+<FORMAT>
+#TITLE_FONT#=1
+#TITLE#=From miner's diary, part four.
+<END_FORMAT>
+
+They're all dead! He killed them! The boss killed them all! I saw their bodies down in the mines. Some of them he took to his chamber, ripped apart, removed organs and then started grinding them in that strange contraption. I need to get out of this place, but he has blocked the main lift. The only way is through the second one.

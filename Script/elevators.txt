@@ -1,0 +1,56 @@
+;-----------------------------------------------------------------------------
+;Open lift doors when at x floor
+;-----------------------------------------------------------------------------
+;
+;Globaltrigger=	6, IGNORE, GT_ELEVATOR_STOPS_AT_FLOOR, 4928, IGNORE, 10, IGNORE
+;Triggergroup=	10, $5000+TGROUP_SINGLE_SHOT_RESUMED, 834, $30F
+;
+;Globaltrigger=	7, IGNORE, GT_ELEVATOR_STOPS_AT_FLOOR, 9024, IGNORE, 11, IGNORE
+;Triggergroup=	11, $5000+TGROUP_SINGLE_SHOT_RESUMED, 835, $30F
+;
+;Globaltrigger=	8, IGNORE, GT_ELEVATOR_STARTS_FROM_FLOOR, 4928, IGNORE, 12, IGNORE
+;Triggergroup=	12, $5000+TGROUP_SINGLE_SHOT_RESUMED, 834, $10F
+;
+;Globaltrigger=	9, IGNORE, GT_ELEVATOR_STARTS_FROM_FLOOR, 9024, IGNORE, 13, IGNORE
+;Triggergroup=	13, $5000+TGROUP_SINGLE_SHOT_RESUMED, 835, $10F
+;
+;-----------------------------------------------------------------------------
+;Move elevator 2
+;-----------------------------------------------------------------------------
+Triggergroup=	14, $9000, 828, $30E
+Triggergroup=	15, $2000+TGROUP_SINGLE_SHOT, 127, $3, $5000, 832, $2A, $5000, 1067, $2D
+Triggergroup=	16, $5000, 832, $11B
+Triggergroup=	17, $5000, 832, $1B
+GlobalTrigger=	10,IGNORE,GT_CONDITION_GROUP,IGNORE,14,15,IGNORE
+Organizer=	3, FO_LOOP, IGNORE, 5, 16, 5, 17
+
+
+; Set Trigger Type - ACTION 15
+; Exporting: TRIGGER(783:0) for ACTION(834)
+; <#> : ANIMATING3                 ID 834    in sector (5,5) of Room25
+; <&> : Force (E) animation (0-31) for <#>object
+; (E) :    3 Animation(opens)
+; Values to add in script command: $5000, 834, $30F
+
+; Set Trigger Type - ACTION 15
+; Exporting: TRIGGER(271:0) for ACTION(834)
+; <#> : ANIMATING3                 ID 834    in sector (5,5) of Room25
+; <&> : Force (E) animation (0-31) for <#>object
+; (E) :    1 Animation(closes)
+; Values to add in script command: $5000, 834, $10F
+
+; Set Trigger Type - FLIPEFFECT 374
+; Exporting: TRIGGER(1:0) for FLIPEFFECT(374)
+; <#> : GlobalTriggers. Enable GlobalTrigger with ID<&>
+; <&> : GlobalTrigger=     1
+; (E) : 
+; Values to add in script command: $2000, 374, $1
+
+
+
+; Set Trigger Type - ACTION 45
+; Exporting: TRIGGER(45:0) for ACTION(1067)
+; <#> : CAMERA_FLYBY               ID 1067   in sector (2,5) of Room26
+; <&> : Trigger. (FlyBy) (E)Activate or Untrigger the <#>FlyBy camera sequence
+; (E) :  Activate Flyby camera sequence
+; Values to add in script command: $5000, 1067, $2D

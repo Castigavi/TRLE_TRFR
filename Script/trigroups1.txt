@@ -1,0 +1,60 @@
+TriggerGroup=   20,$8000, 50, $24,$2000, 145, $1
+TriggerGroup=   21,$8000, 50, $24,$2000, 146, $1
+Triggergroup=	28, $2000, 167, $1, $2000, 166, $2, $2000, 167, $3, $2000, 166, $4, $2000, 167, $5, $2000, 167, $6
+Parameters=	PARAM_MOVE_ITEM, 1, IGNORE, 447, DIR_WEST, 512, 512, IGNORE, IGNORE, IGNORE
+Parameters=	PARAM_MOVE_ITEM, 2, IGNORE, 444, DIR_WEST, 512, 512, IGNORE, IGNORE, IGNORE
+Parameters=	PARAM_MOVE_ITEM, 3, IGNORE, 386, DIR_WEST, 512, 512, IGNORE, IGNORE, IGNORE
+;Triggergroup=	3, $2000, 166, $4, $2000, 167, $5
+Parameters=	PARAM_MOVE_ITEM, 4, IGNORE, 1602, DIR_WEST, 512, 512, IGNORE, IGNORE, IGNORE
+Parameters=	PARAM_MOVE_ITEM, 5, IGNORE, 1606, DIR_WEST, 512, 512, IGNORE, IGNORE, IGNORE
+Triggergroup=	2, $2000, 130, $0, $2000, 129, $2, $2000, 223, $0,  $2000, 82, $18
+Parameters=	PARAM_MOVE_ITEM, 6, IGNORE, 70, DIR_NORTH, 512, 512, IGNORE, IGNORE, IGNORE
+
+;CD
+
+Triggergroup=	6, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $C
+Triggergroup=	4, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $9
+Triggergroup=	5, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $B
+Triggergroup=	7, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $E
+Triggergroup=	8, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $A
+Triggergroup=	9, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $7
+Triggergroup=	17, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $D
+
+Triggergroup=	22, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $13
+Triggergroup=	23, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $D
+Triggergroup=	24, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $D
+Triggergroup=	27, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $8
+
+;DIARY
+
+Triggergroup=	10, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $105
+Triggergroup=	11, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $106
+Triggergroup=	12, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $107
+Triggergroup=	13, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $108
+Triggergroup=	18, $2000+TGROUP_SINGLE_SHOT, 219, $109, $2000, 222, $1
+
+;SECRET WEAPON
+Parameters= PARAM_BIG_NUMBERS, 9999
+
+Triggergroup=	14, $8000, 6, $11					;if 6 secrets
+Triggergroup=	15, $2000+TGROUP_SINGLE_SHOT, 48, $15E, $2000, 262, $3E	;add uzi and set BIG_NUMBERS amount of ammo
+GlobalTrigger=	16, IGNORE,GT_ALWAYS, IGNORE, 14, 15, IGNORE ; if 14 then 15
+
+Triggergroup=	30, $8000, 232, $103
+Triggergroup=	31, $2000, 47, $39
+GlobalTrigger=	50, IGNORE,GT_ALWAYS, IGNORE, 30, 31, IGNORE
+
+; Set Trigger Type - FLIPEFFECT 262
+; Exporting: TRIGGER(62:0) for FLIPEFFECT(262)
+; <#> : Variables. Memory. Set in <&>Savegame Memory the (E)Big Number value
+; <&> : Inventory. Ammo UZI (Short)
+; (E) : Value of Parameters=PARAM_BIG_NUMBERS at index=     0
+; Values to add in script command: $2000, 262, $3E
+
+;COG CAMERA TO CATHEDRAL
+Triggergroup=	25, $9000, 1536, $30E, $9000, 1537, $30E, $9000, 1538, $30E
+Triggergroup=	26, $5000+TGROUP_SINGLE_SHOT, 1806, $2D, $2000, 373, $16
+GlobalTrigger=	51, IGNORE,GT_CONDITION_GROUP, IGNORE, 25, 26, IGNORE
+
+
+GlobalTrigger=	52, FGT_SINGLE_SHOT, GT_ALWAYS, IGNORE, IGNORE, 28, IGNORE ; play triggergroup 1 then disable

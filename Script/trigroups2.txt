@@ -1,0 +1,132 @@
+;-----------------------------------------------------------------------------
+;BLINKING LIGHT
+;-----------------------------------------------------------------------------
+
+ItemGroup=		1, 329, 758, 759, 701, 707, 708, 709
+TriggerGroup=   20,$8000, 50, $24,$2000, 145, $1
+TriggerGroup=   21,$8000, 50, $24,$2000, 146, $1
+Organizer=      2,FO_ENABLED+FO_TICK_TIME+FO_LOOP, IGNORE,2,20,2,21
+addeffect=		1,ADD_LIGHT_BLINK, FADD_CONTINUE_EMIT, JOINT_SINGLE_MESH, 0, 0, 0, IGNORE, IGNORE, 15, IGNORE, MIST_COL_WHITE
+
+;-----------------------------------------------------------------------------
+;TURN_SWITCH
+;-----------------------------------------------------------------------------
+
+
+; Set Trigger Type - ACTION 54
+; Exporting: TRIGGER(54:0) for ACTION(127)
+; <#> : TURN_SWITCH                ID 127    in sector (7,6) of Room10
+; <&> : Variables. Set the index of <#>moveable as Selected Item
+; (E) : 
+; Values to add in script command: $5000, 127, $36
+
+; Set Trigger Type - FLIPEFFECT 256
+; Exporting: TRIGGER(7488:0) for FLIPEFFECT(256)
+; <#> : Variables. Memory. Copy to <&> Numeric Variable the (E)Selected Item Memory
+; <&> : Local Byte Alfa1
+; (E) : Facing Horizontal (Short)
+; Values to add in script command: $2000, 256, $1D40
+
+; Exporting: TRIGGER (7440: 0) for FLIPEFFECT (256)
+; <#>: Variables. Memory. Copy to <&> Numeric variable the (E) Selected Item Memory
+; <&>: Global Short alfa1
+; (E): Facing Horizontal (Short)
+; Values ??to add in script command: $2000, 256, $1D10
+
+; Exporting: TRIGGER (16: 0) for FLIPEFFECT (284)
+; <#>: Variables. Numeric. Invert the sign of <&> Numeric Variable
+; <&>: Global Short alfa1
+; (E):
+; Values ??to add in script command: $2000, 284 $10
+
+;GlobalTrigger=	1, IGNORE,GT_ALWAYS, IGNORE, IGNORE, 1, IGNORE
+;TriggerGroup=	1, $5000, 127, $36,$2000, 256, $1D14, $2000, 256, $1D10, $2000, 284, $10 
+
+;Parameters=		PARAM_BIG_NUMBERS, 16384
+
+;TriggerGroup=	2, $8000, 16, $26; condition if variable = index0
+;TriggerGroup=	3, $5000, 57, $11A ; activate rope
+;TriggerGroup=	4, $5000, 57, $2C ; deactivate rope
+;GlobalTrigger=	2,IGNORE,GT_CONDITION_GROUP,IGNORE,2,3,4
+
+; Set Trigger Type - FLIPEFFECT 257 
+; Exporting: TRIGGER (7509: 0) for FLIPEFFECT (257) 
+; <#>: Variables. Memory. Copy from <&> Numeric Variable to (E) Selected Item Memory 
+; <&>: Global Short Delta1 
+; (E): Facing Horizontal (Short) 
+; Values ??to add in script command: $ 2000, 257, $1D14 
+
+;Triggergroup=	13, $2000, 257, $1D1
+;GlobalTrigger=	6, IGNORE, GT_AFTER_RELOADING_VARIABLES, 1, IGNORE, 13, IGNORE
+
+;-----------------------------------------------------------------------------
+;FILL WATER ROOM
+;-----------------------------------------------------------------------------
+
+GlobalTrigger=	3,IGNORE,GT_CONDITION_GROUP,IGNORE,5,6,IGNORE
+TriggerGroup=	5, $9000, 451, $30E
+TriggerGroup=	6, $5000+TGROUP_SINGLE_SHOT, 482, $2B, $5000, 452, $2B, $2000, 124, $3E01, $2000, 125, $1, $2000, 2, $0, $5000, 656, $2B, $5000, 229, $2B, $5000, 655, $2D, $2000, 373, $3D
+
+;-----------------------------------------------------------------------------
+;LAVA_ROOM CAMERA
+;-----------------------------------------------------------------------------
+
+MultEnvCondition=1, ENV_ROOM_IS, 7, IGNORE
+GlobalTrigger=	4, IGNORE, GT_CONDITION_GROUP, IGNORE, 7, 8
+TriggerGroup=	7, $8000, 1, $10
+TriggerGroup=	8, $5000, 492, $29
+
+;-----------------------------------------------------------------------------
+;FINISH
+;-----------------------------------------------------------------------------
+
+Triggergroup=	22, $2000, 130, $0, $2000, 129, $2, $2000, 223, $0,  $2000, 82, $002 
+
+;-----------------------------------------------------------------------------
+;Move twoblock platform(826) down
+;-----------------------------------------------------------------------------
+
+Parameters=	PARAM_MOVE_ITEM, 1, IGNORE, 826, DIR_DOWN, 10624, 40, IGNORE, IGNORE, IGNORE	; move 826(twoblock) dir_down 9472(41clicks) with speed 128
+GlobalTrigger=	5, IGNORE,GT_ALWAYS, IGNORE, IGNORE, 9, IGNORE
+Triggergroup=	9, $5000+TGROUP_SINGLE_SHOT, 992, $2D	;perform flyby
+
+;-----------------------------------------------------------------------------
+;Electric puzzle
+;-----------------------------------------------------------------------------
+ColorRGB=		3,  0, 128, 208
+Parameters=     PARAM_LIGHTNING, 1, LGTN_PLAY_SOUND+LGTN_ADD_GLOVE_LIGHT, 87, 99, 3, 32, 197, 32, 24, 4, 1, 5
+Parameters=     PARAM_LIGHTNING, 2, LGTN_PLAY_SOUND+LGTN_ADD_GLOVE_LIGHT, 87, 104, 3, 32, 197, 32, 24, 4, 1, 5
+
+;-----------------------------------------------------------------------------
+;Music
+;-----------------------------------------------------------------------------
+Triggergroup=	10, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $10
+Triggergroup=	11, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $11
+Triggergroup=	12, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $4
+Triggergroup=	60, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $12
+Triggergroup=	61, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $14
+Triggergroup=	62, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $15
+Triggergroup=	63, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $16
+Triggergroup=	64, $2000+TGROUP_SINGLE_SHOT, 130, $1, $2000, 129, $17
+
+;-----------------------------------------------------------------------------
+;Diary
+;-----------------------------------------------------------------------------
+Triggergroup=	23, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $102
+Triggergroup=	24, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $103
+Triggergroup=	25, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $104
+Triggergroup=	26, $2000+TGROUP_SINGLE_SHOT, 47, $44, $2000, 219, $101
+
+;-----------------------------------------------------------------------------
+;Secrets
+;-----------------------------------------------------------------------------
+Triggergroup=	30, $8000, 232, $103
+Triggergroup=	31, $2000, 47, $39
+GlobalTrigger=	50, IGNORE,GT_ALWAYS, IGNORE, 30, 31, IGNORE
+
+; Set Trigger Type - FLIPEFFECT 47
+; Exporting: TRIGGER(68:0) for FLIPEFFECT(47)
+; <#> : Inventory-Item. Remove <&>inventory-item from inventory
+; <&> : EXAMINE1                        	Slot=243
+; (E) : 
+; Values to add in script command: $2000, 47, $44

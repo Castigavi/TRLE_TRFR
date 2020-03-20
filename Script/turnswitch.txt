@@ -1,0 +1,80 @@
+;-----------------------------------------------------------------------------
+;TURN_SWITCH
+;-----------------------------------------------------------------------------
+
+
+; Set Trigger Type - ACTION 54
+; Exporting: TRIGGER(54:0) for ACTION(127)
+; <#> : TURN_SWITCH                ID 127    in sector (7,6) of Room10
+; <&> : Variables. Set the index of <#>moveable as Selected Item
+; (E) : 
+; Values to add in script command: $5000, 127, $36
+
+; Set Trigger Type - FLIPEFFECT 256
+; Exporting: TRIGGER(7488:0) for FLIPEFFECT(256)
+; <#> : Variables. Memory. Copy to <&> Numeric Variable the (E)Selected Item Memory
+; <&> : Local Byte Alfa1
+; (E) : Facing Horizontal (Short)
+; Values to add in script command: $2000, 256, $1D40
+
+; Exporting: TRIGGER (7440: 0) for FLIPEFFECT (256)
+; <#>: Variables. Memory. Copy to <&> Numeric variable the (E) Selected Item Memory
+; <&>: Global Short alfa1
+; (E): Facing Horizontal (Short)
+; Values ??to add in script command: $2000, 256, $1D10
+
+; Exporting: TRIGGER (16: 0) for FLIPEFFECT (284)
+; <#>: Variables. Numeric. Invert the sign of <&> Numeric Variable
+; <&>: Global Short alfa1
+; (E):
+; Values ??to add in script command: $2000, 284 $10
+
+GlobalTrigger=	1, IGNORE,GT_ALWAYS, IGNORE, IGNORE, 1, IGNORE
+TriggerGroup=	1, $5000, 127, $36,$2000, 256, $1D14, $2000, 256, $1D10, $2000, 284, $10 
+
+Parameters=		PARAM_BIG_NUMBERS, 16384
+
+; Exporting: CONDITION(38:60) for PARAMETER(16)
+; <#> : Global Short Alfa1
+; <&> : Variables. The <#>Numeric Variable is >= than (E)Big Number value
+; (E) : Value of Parameters=PARAM_BIG_NUMBERS at index= 1
+; Values to add in script command: $8000, 16, $126
+
+TriggerGroup=	2, $8000, 16, $26; condition if variable = index0
+TriggerGroup=	3, $5000, 57, $11A ; activate rope
+TriggerGroup=	4, $5000, 57, $2C ; deactivate rope
+GlobalTrigger=	2,IGNORE,GT_CONDITION_GROUP,IGNORE,2,3,4
+
+; Set Trigger Type - FLIPEFFECT 256
+; Exporting: TRIGGER(7442:0) for FLIPEFFECT(256)
+; <#> : Variables. Memory. Copy to <&> Numeric Variable the (E)Selected Item Memory
+; <&> : Global Short Beta1
+; (E) : Facing Horizontal (Short)
+; Values to add in script command: $2000, 256, $1D12
+
+; Set Trigger Type - FLIPEFFECT 284
+; Exporting: TRIGGER(18:0) for FLIPEFFECT(284)
+; <#> : Variables. Numeric. Invert the sign of <&>Numeric Variable
+; <&> : Global Short Beta1
+; (E) : 
+; Values to add in script command: $2000, 284, $12
+
+Triggergroup=	18, $2000, 256, $1D12
+GlobalTrigger=	7, IGNORE, GT_BEFORE_SAVING_VARIABLES, 1, IGNORE, 18
+
+; Set Trigger Type - ACTION 54
+; Exporting: TRIGGER(54:0) for ACTION(127)
+; <#> : TURN_SWITCH                ID 127    in sector (7,6) of Room10
+; <&> : Variables. Set the index of <#>moveable as Selected Item
+; (E) : 
+; Values to add in script command: $5000, 127, $36
+
+; Set Trigger Type - FLIPEFFECT 257
+; Exporting: TRIGGER(7442:0) for FLIPEFFECT(257)
+; <#> : Variables. Memory. Copy from <&>Numeric Variable to (E)Selected Item Memory
+; <&> : Global Short Beta1
+; (E) : Facing Horizontal (Short)
+; Values to add in script command: $2000, 257, $1D12
+
+Triggergroup=	13, $5000, 127, $36, $2000, 257, $1D12
+GlobalTrigger=	6, IGNORE, GT_AFTER_RELOADING_VARIABLES, 1, IGNORE, 13, IGNORE

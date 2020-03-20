@@ -1,0 +1,13 @@
+Equipment=		QUEST_ITEM1,1
+ColorRGB=		1, 0,0,0
+ColorRGB=		2, 0,0,0
+WindowsFont=	1, Arial, WFF_BOLD+WFF_CENTER_ALIGN, 40, 1, 2 
+WindowsFont=	2, Times New Roman, WFF_LEFT_ALIGN, 22, 2, IGNORE 
+Diary=			1,QUEST_ITEM1,LDF_SOUND_EFFECTS, 2, PL_DOUBLE_PAGE, @page1.txt,1, 2
+Parameters=		PARAM_BIG_NUMBERS,12292
+TriggerGroup=	65,$2000, 51, $12,$2000, 51, $13,$2000, 335, $69,$2000, 338, $9
+GlobalTrigger=	23,IGNORE,GT_ALWAYS,-1,-1,65,-1
+Globaltrigger=	24, -1,GT_KEYBOARD_CODE,64,-1,66,-1
+TriggerGroup=	66,$2000, 53, $13
+Globaltrigger=	25, -1,GT_KEYBOARD_CODE,63,-1,67,-1
+TriggerGroup=	67,$2000, 53, $12
