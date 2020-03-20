@@ -16,16 +16,16 @@ If I forgot to list someone then do tell me and I will add you to the list in th
 http://www.tombraiderforums.com/showthread.php?t=202592
 
 Textures and images taken from:
-Gothic
-Gothic 2
-Gothic 3
-Harry Potter and the Philosopher's Stone
-Harry Potter and the Chamber of Secrets
-Harry Potter and the Prisoner of Azkaban
-The Witcher
-Prince of Persia: Warrior Within
-cgtextures.com
-Back to Basics: Steampunk
+Gothic,
+Gothic 2,
+Gothic 3,
+Harry Potter and the Philosopher's Stone,
+Harry Potter and the Chamber of Secrets,
+Harry Potter and the Prisoner of Azkaban,
+The Witcher,
+Prince of Persia: Warrior Within,
+cgtextures.com,
+Back to Basics: Steampunk.
 
 
 # READ BEFORE PLAYING:
