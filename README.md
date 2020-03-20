@@ -3,16 +3,16 @@ Tomb Raider Forgotten Remnants
 
 This github repo contains full Tomb Raider Forgotten Remnants assets that can be used by everyone for as long as they give all the people involved the Credits they deserve.
 
-######################################################################
-#ORIGINAL README BELOW:
-######################################################################
+;######################################################################;
+;#ORIGINAL README BELOW:
+;######################################################################;
 
 Author: Caesum(pmkkoch)
 Testers: Cannibal, Ceamonks890, DVDSpike & krtomb
 
-######################################################################
-#THANKS TO:
-######################################################################
+;######################################################################;
+;#THANKS TO:
+;######################################################################;
 teme9, Horus-Goddess, Piega, BARRY, Sorata, Level NextGen, Miramar, Devoid, Tomb Laraider, trix, uranos, Trinity, Lara's Boyfriend, tomb2player, PeeT, I.M., usuki_frenzist, maixhunk, mike quahe, karlo002, white tiger, mr xy, human, MissKroft, Trangel, Po Yu, uranos1, Horus, Josep Borruts, maax_87, Harrys, kurtisandlara, Dino, Symsi, Dino14, Spongebob, A_De, Zolee, Tomb Laraider, GeckoKid, -=DeMoS=-, l.m., 
 
 Special thanks to thatnorskchick2 for her fabulous TRAOD theme piano cover.
@@ -34,9 +34,9 @@ Prince of Persia: Warrior Within
 cgtextures.com
 Back to Basics: Steampunk
 
-######################################################################
-#READ BEFORE PLAYING:
-######################################################################
+;######################################################################;
+;#READ BEFORE PLAYING:
+;######################################################################;
 Skeletons can be killed with normal pistols.
 Sometimes Lara may not want to do things like shimmying through corners or grabbing ladders. Remember to save before trying such things.
 
