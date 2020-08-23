@@ -37,14 +37,14 @@ File=	4,SPANISH.TXT
 [Options]
 LoadSave=		ENABLED
 Title=		ENABLED
-;PlayAnyLevel=	ENABLED
+PlayAnyLevel=	DISABLED
 InputTimeout=	18000		; frames * seconds = 60x30
-FlyCheat=		enabled
+FlyCheat=		DISABLED
 Security=		$55
 DemoDisc=		DISABLED
 WorldFarView=	127
 ShowLaraInTitle=ENABLED
-Diagnostic=	ENABLED
+Diagnostic=	DISABLED
 ;DiagnosticType=	DGX_CHEATS, IGNORE
 DiagnosticType=	DGX_SFX_SOUNDS+DGX_CHEATS, IGNORE
 ;Settings=		SET_ACCEPT_EXTRA_TAILINFOS
