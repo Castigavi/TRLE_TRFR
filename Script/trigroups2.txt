@@ -72,7 +72,7 @@ TriggerGroup=	6, $5000+TGROUP_SINGLE_SHOT, 482, $2B, $5000, 452, $2B, $2000, 124
 ;-----------------------------------------------------------------------------
 
 MultEnvCondition=1, ENV_ROOM_IS, 7, IGNORE
-GlobalTrigger=	4, IGNORE, GT_CONDITION_GROUP, IGNORE, 7, 8
+GlobalTrigger=	4, IGNORE, GT_CONDITION_GROUP, IGNORE, 7, 8, -1
 TriggerGroup=	7, $8000, 1, $10
 TriggerGroup=	8, $5000, 492, $29
 
@@ -130,3 +130,7 @@ GlobalTrigger=	50, IGNORE,GT_ALWAYS, IGNORE, 30, 31, IGNORE
 ; <&> : EXAMINE1                        	Slot=243
 ; (E) : 
 ; Values to add in script command: $2000, 47, $44
+
+;GlobalTrigger=  51, IGNORE, GT_CONDITION_GROUP, IGNORE, 32, 33, -1; Force animation 474 when Lara is using SARCOPHAGUS
+;TriggerGroup=   32, $8000, 439, $1E              ; Check if Lara is performing animation 439
+;TriggerGroup=   33, $2000,80,$00DA             ; Force animation 474

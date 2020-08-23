@@ -371,3 +371,6 @@ THE LAST STRING ENTRY
 7: @page7.txt
 8: @page8.txt
 9: @page9.txt
+10: Automatic FOV by JoeyQuint v1.0.0.0
+11: Plugin_AutomaticFov
+12: Plugin_AutomaticFov.dll
