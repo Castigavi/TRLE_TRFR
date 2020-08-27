@@ -1,0 +1,375 @@
+NumFrames: 51
+Frame: 1
+Title: 
+NumCallouts: 1
++--->
+Copy pcwadsfx.exe from your TRLE installation to the output folder in TRLE  Sound Editor's folder.
+
+If the output folder does not exist just create it.
++--->
+Frame: 2
+Title: 
+NumCallouts: 1
++--->
+pcwadsfx.exe has been copied to the output folder.
++--->
+Frame: 3
+Title: 
+NumCallouts: 1
++--->
+Start TRLE Sound Editor.
++--->
+Frame: 4
+Title: 
+NumCallouts: 1
++--->
+You can open files 3 ways.
+
+1. Use the File/Open menu or toolbutton
+2. Drag the file onto TRLE Sound Editor
+3. Use the recent files drop down
+
+
++--->
+Frame: 5
+Title: 
+NumCallouts: 1
++--->
+You can use TRLE Sound Editor to create SFX and SAM files from Sounds.txt.
+
+The file dialog defaults to file extension .wad so you will have to change it to .txt.
++--->
+Frame: 6
+Title: 
+NumCallouts: 1
++--->
+Open Sounds.txt.
++--->
+Frame: 7
+Title: 
+NumCallouts: 0
++--->
+Frame: 8
+Title: 
+NumCallouts: 1
++--->
+The pages in TRLE Sound Editor can display the spaces and tabs of the text. If you wish you can turn this feature off.
++--->
+Frame: 9
+Title: 
+NumCallouts: 0
++--->
+Frame: 10
+Title: 
+NumCallouts: 1
++--->
+Change the wad letters to those that correspond to the wad you want to create SFX and SAM files for.
++--->
+Frame: 11
+Title: 
+NumCallouts: 1
++--->
+We will create SFX and SAM files for tut1 so will change the letters to Tu.
++--->
+Frame: 12
+Title: 
+NumCallouts: 0
++--->
+Frame: 13
+Title: 
+NumCallouts: 0
++--->
+Frame: 14
+Title: 
+NumCallouts: 1
++--->
+Use this button to create the SFX and SAM files. See the readme in the output folder for more details.
+Before creating the SFX and SAM files you can modify any lines. This page of TRLE Sound Editor is a full editor with undo and redo and paste etc.
+
+If adding or changing samples do not use ":" or "#" or spaces in the name.
++--->
+Frame: 15
+Title: 
+NumCallouts: 1
++--->
+pcwadsfx.exe should create the SFX and SAM files in the output folder if all goes well.
+
+Press any key to get rid of the console window.
++--->
+Frame: 16
+Title: 
+NumCallouts: 1
++--->
+The output folder can be opened with this button.
++--->
+Frame: 17
+Title: 
+NumCallouts: 1
++--->
+TRLE Sound Editor saved Tu_Sounds.txt and then created a BAT file that executed pcwadsfx.exe. pcwadsfx.exe then created the SAM and SFX files.
+The SAM and SFX files will have to be renamed to match your WAD file and then copied to your wad's folder.
+
+You could edit the BAT file with the correct wad name and execute it yourself  to get SFX and SAM files with the wad name.
++--->
+Frame: 18
+Title: 
+NumCallouts: 1
++--->
+Press this button to clear TRLE Sound Editor.
++--->
+Frame: 19
+Title: 
+NumCallouts: 1
++--->
+If you want to create a default sounds.txt without any sounds associated press this button.
+
+Note that TRLE Sound Editor must be cleared (i.e. nothing loaded).
++--->
+Frame: 20
+Title: 
+NumCallouts: 1
++--->
+No sounds associated here.
++--->
+Frame: 21
+Title: 
+NumCallouts: 1
++--->
+If you want to create a default sounds.txt with only general sounds associated press this button.
+
+Note that TRLE Sound Editor must be cleared (i.e. nothing loaded).
++--->
+Frame: 22
+Title: 
+NumCallouts: 0
++--->
+Frame: 23
+Title: 
+NumCallouts: 1
++--->
+You can view the Standard default Sounds.txt pressing this button.
++--->
+Frame: 24
+Title: 
+NumCallouts: 1
++--->
+The Standard Sounds.txt is displayed in blue so that it is not confused with sounds.txt that will be used for creating the SAM and SFX files.
+
+You can see which sounds are considered general sounds and are associated with every wad by letter #g.
+
+The Standard Sounds are loaded from StandardSounds.dat in the TRLE Sound Editor folder.
+This dat file is a text file that can be modified but must be present in the folder for TRLE Sound Editor to work.
++--->
+Frame: 25
+Title: 
+NumCallouts: 1
++--->
+Now we will open a WAD file in TRLE Sound Editor.
++--->
+Frame: 26
+Title: 
+NumCallouts: 0
++--->
+Frame: 27
+Title: 
+NumCallouts: 1
++--->
+When you open a WAD file the SFX file will also be opened.
+
+Here you can see all the sounds in the SFX file.
++--->
+Frame: 28
+Title: 
+NumCallouts: 1
++--->
+You can press this button to see more easily which of the 370 sounds have been included in the SFX.
+
+This also makes it easier to compare with the other pages.
++--->
+Frame: 29
+Title: 
+NumCallouts: 1
++--->
+Sounds marked as -1 are not present in the SFX file.
++--->
+Frame: 30
+Title: 
+NumCallouts: 1
++--->
+When a WAD file is opened, the SAM file is also opened to get the correct sample names.
+
+The sample names are listed on this page.
++--->
+Frame: 31
+Title: 
+NumCallouts: 2
++--->
+When a WAD file is opened all the sounds used by the animations are listed on this page.
+
+The moveable that uses them is also listed.
+
+For sound IDs 27, 50 and 62 the animations that use the sounds are also shown.
+
+
++--->
+Note that the default TRLE karnak has PUZZLE_HOLE3 listed for most sounds which is wrong.
+
+I think karnak has corrupt data but maybe there is a bug in TRLE Sound Editor when listing the moveables for sounds!
++--->
+Frame: 32
+Title: 
+NumCallouts: 1
++--->
+What gives with IDs 27, 50, 62?
+
+27 is the "Don't_use_this_space" sound.
+I wanted to see where it was used in the wad.
+
+62 is the "LARA_PICKUP" sound.
+In the Sounds.txt installed with TRLE this sound has no samples. I wanted to see where it was used.
+
+50 is the "UNDERWATER_DOOR" sound.
+You must not use this sound if you have baddies that shoot Lara with bullets. This causes the underwater door sound bug.
+If you have operating underwater doors in a level with baddies too assign the underwater door sample to a different sound ID and change the animcommands for the animations to use the new sound ID.
++--->
+Frame: 33
+Title: 
+NumCallouts: 1
++--->
+By holding <CTRL> key down and pressing this button you can see more easily which of the 370 sounds have been used in the WAD file.
++--->
+Frame: 34
+Title: 
+NumCallouts: 1
++--->
+Sounds marked as -1 are not present in the WAD file.
++--->
+Frame: 35
+Title: 
+NumCallouts: 1
++--->
+If you have opened a WAD file you can then create a sounds.txt that will contain only those sounds used in the WAD file by pressing this button.
++--->
+Frame: 36
+Title: 
+NumCallouts: 2
++--->
+If you have opened a WAD file you can then create a sounds.txt that will contain only those sounds used in the WAD file plus the general sounds defined in the Standard Sounds by pressing this button.
++--->
+If you forgot to change the wad letters, change them and then press the create sounds.txt button again.
++--->
+Frame: 37
+Title: 
+NumCallouts: 1
++--->
+If you have opened a WAD file and created a sounds.txt you can view the summary tab.
++--->
+Frame: 38
+Title: 
+NumCallouts: 1
++--->
+This lists all the sounds.
+
+If a sound is present in the WAD, "WAD" is next to it.
+
+If a sound is in the SFX, "SFX" will be next to it.
+
+If a sound is a general sound, "g" will be next to it.
+
+If a sound is in the created sounds.txt, "TXT" will be next to it.
+
+I have this summary just as an investigation tool.
+
+You want to make sure all the WAD sounds also have TXT.
+If you have also included the general sounds you will want all g sounds to have TXT.
+
+If you open some of the original Core Design wads you will see that the SFX sometimes does not contain all the WAD sounds and also that the SFX sometimes contains extra sounds.
++--->
+Frame: 39
+Title: 
+NumCallouts: 1
++--->
+In the Sounds.txt page make any modifications to the sounds you want then press Create SFX and SAM.
+ 
+Remember only the sounds associated with the wad letters (in this case Tu) or marked as #g will be included in the SFX and SAM files.
+
+Note that TRLE Sound Editor will remove an associated sound if that sound has no samples.
++--->
+Frame: 40
+Title: 
+NumCallouts: 1
++--->
+pcwadsfx.exe creates the SFX and SAM files in the output folder.
+
+Note any files of the same name will be automatically overwritten.
++--->
+Frame: 41
+Title: 
+NumCallouts: 1
++--->
+Because we opened a wad file, TRLE Sound Editor knows the name of the wad so this time the SFX and SAM files are given the wadname. Copy the SFX and SAM files to your wad's folder to replace the SFX and SAM files.
++--->
+Frame: 42
+Title: 
+NumCallouts: 1
++--->
+TRLE Sound Editor can also open SFX files.
++--->
+Frame: 43
+Title: 
+NumCallouts: 1
++--->
+Note that you cannot create a sounds.txt when you open an SFX file. (The button is disabled)
++--->
+Frame: 44
+Title: 
+NumCallouts: 1
++--->
+When an SFX is opened the WAD File Sounds page is empty.
++--->
+Frame: 45
+Title: 
+NumCallouts: 1
++--->
+Whan an SFX file is opened the SAM file is opened too to get the sample names.
++--->
+Frame: 46
+Title: 
+NumCallouts: 1
++--->
+If you wish to create a sounds.txt from an SFX you can create one as follows.
+
+First display the SFX in 370 line format.
++--->
+Frame: 47
+Title: 
+NumCallouts: 1
++--->
+Save the SFX File Sounds page.
+
+Any of the pages in TRLE Sound Editor can be saved this way for later examination.
++--->
+Frame: 48
+Title: 
+NumCallouts: 1
++--->
+This dialog will appear only when saving an SFX page in 370 line format and not displaying the values as real values. (See later.)
++--->
+Frame: 49
+Title: 
+NumCallouts: 1
++--->
+All pages are saved as text files. 
++--->
+Frame: 50
+Title: 
+NumCallouts: 1
++--->
+To display the real values for PIT, VOL, RAD, etc as stored in the SFX file press this button.
+
+This is only for investigation purposes.
++--->
+Frame: 51
+Title: 
+NumCallouts: 0
++--->
