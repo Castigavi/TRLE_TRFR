@@ -1,0 +1,4 @@
+Due to the game using special FLEP-exclusive features the modified tomb4.exe executable might be considered DANGEROUS by some antiviruses.
+This is a FALSE POSITIVE which happens because the executable has been modified by a program called FLEP.
+The game is virus-free.
+If your antivirus insists on deleting the tomb4.exe file, you might want to add tomb4.exe to exceptions list in your antivirus program.
