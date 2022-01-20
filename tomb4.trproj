@@ -6,5 +6,16 @@
   <LaunchFilePath>$(ProjectDirectory)\tomb4.exe</LaunchFilePath>
   <ScriptPath>$(ProjectDirectory)\Script</ScriptPath>
   <LevelsPath>$(ProjectDirectory)\graphics</LevelsPath>
-  <Levels />
+  <Levels>
+    <ProjectLevel>
+      <Name>lvl1</Name>
+      <FolderPath>$(ProjectDirectory)\graphics\lvl1</FolderPath>
+      <SpecificFile>$(LatestFile)</SpecificFile>
+    </ProjectLevel>
+    <ProjectLevel>
+      <Name>lvl2</Name>
+      <FolderPath>$(ProjectDirectory)\graphics\lvl2</FolderPath>
+      <SpecificFile>$(LatestFile)</SpecificFile>
+    </ProjectLevel>
+  </Levels>
 </Project>
