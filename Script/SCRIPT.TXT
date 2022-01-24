@@ -37,7 +37,7 @@ File=	4,SPANISH.TXT
 [Options]
 LoadSave=		ENABLED
 Title=		ENABLED
-PlayAnyLevel=	DISABLED
+PlayAnyLevel=	ENABLED
 InputTimeout=	18000		; frames * seconds = 60x30
 FlyCheat=		ENABLED
 Security=		$55
@@ -117,7 +117,7 @@ Customize=		CUST_BACKGROUND, BKGDT_LOADING_LEVEL, BKGDF_MINIMAL_LOADING_TIME, 1,
 Enemy=		SKELETON, 50, NEF_EXPLODE+NEF_HIT_FRAGMENTS+NEF_SET_AS_MORTAL, IGNORE, IGNORE, IGNORE, IGNORE, IGNORE
 FOG=			232, 35, 0
 ForceVolumetricFX=DISABLED
-Puzzle=  		8,Little Wheel, $0000,$0200,$0000,$c000,$0000,$0002
+Puzzle=  		8, Cog, $0000,$0200,$0000,$c000,$0000,$0002
 Key=			1, Tomb Key, $0000, $0400, $0000, $c000, $0000, $0002
 Key=			2, Kitchen Key, $0000, $0400, $0000, $c000, $0000, $0002
 Key=			3, Hypostyle Key, $0000, $0400, $0000, $c000, $0000, $0002

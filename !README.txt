@@ -46,7 +46,7 @@ Testers: Cannibal, Ceamonks890, DVDSpike & krtomb, klona, Dejan
 ######################################################################
 #THANKS TO:
 ######################################################################
-teme9, Horus-Goddess, Piega, BARRY, Sorata, Level NextGen, Miramar, Devoid, Tomb Laraider, trix, uranos, Trinity, Lara's Boyfriend, tomb2player, PeeT, I.M., usuki_frenzist, maixhunk, mike quahe, karlo002, white tiger, mr xy, human, MissKroft, Trangel, Po Yu, uranos1, Horus, Josep Borruts, maax_87, Harrys, kurtisandlara, Dino, Symsi, Dino14, Spongebob, A_De, Zolee, Tomb Laraider, GeckoKid, -=DeMoS=-, l.m., 
+teme9, Horus-Goddess, Piega, BARRY, Sorata, Level NextGen, Miramar, Devoid, Tomb Laraider, trix, uranos, Trinity, Lara's Boyfriend, tomb2player, PeeT, I.M., usuki_frenzist, maixhunk, mike quahe, karlo002, white tiger, mr xy, human, MissKroft, Trangel, Po Yu, uranos1, Horus, Josep Borruts, maax_87, Harrys, kurtisandlara, Dino, Symsi, Dino14, Spongebob, A_De, Zolee, Tomb Laraider, GeckoKid, -=DeMoS=-, l.m., daledrau
 
 Special thanks to thatnorskchick2 for her fabulous TRAOD theme piano cover.
 

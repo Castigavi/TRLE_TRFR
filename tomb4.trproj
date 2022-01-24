@@ -3,23 +3,23 @@
   <Name>trle_trfr</Name>
   <GameVersion>TRNG</GameVersion>
   <DefaultLanguage>English</DefaultLanguage>
-  <LaunchFilePath>$(ProjectDirectory)\tomb4.exe</LaunchFilePath>
+  <LaunchFilePath>$(ProjectDirectory)\launch.exe</LaunchFilePath>
   <ScriptPath>$(ProjectDirectory)\Script</ScriptPath>
-  <LevelsPath>$(ProjectDirectory)\graphics</LevelsPath>
+  <LevelsPath>$(ProjectDirectory)\Levels</LevelsPath>
   <Levels>
     <ProjectLevel>
-      <Name>title</Name>
-      <FolderPath>$(ProjectDirectory)\graphics\title</FolderPath>
+      <Name>lvl1</Name>
+      <FolderPath>$(ProjectDirectory)\Levels\lvl1</FolderPath>
       <SpecificFile>$(LatestFile)</SpecificFile>
     </ProjectLevel>
     <ProjectLevel>
       <Name>lvl2</Name>
-      <FolderPath>$(ProjectDirectory)\graphics\lvl2</FolderPath>
+      <FolderPath>$(ProjectDirectory)\Levels\lvl2</FolderPath>
       <SpecificFile>$(LatestFile)</SpecificFile>
     </ProjectLevel>
     <ProjectLevel>
-      <Name>lvl1</Name>
-      <FolderPath>$(ProjectDirectory)\graphics\lvl1</FolderPath>
+      <Name>title</Name>
+      <FolderPath>$(ProjectDirectory)\Levels\title</FolderPath>
       <SpecificFile>$(LatestFile)</SpecificFile>
     </ProjectLevel>
   </Levels>
