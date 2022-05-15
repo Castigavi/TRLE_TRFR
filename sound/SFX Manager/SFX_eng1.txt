@@ -1,0 +1,164 @@
+-------------------------------------------------------------------------------------------------------
+* Restrictions and important notes before using this tool :
+-------------------------------------------------------------------------------------------------------
+
+     . This program automatically loads/saves from standard structure folders. You just have to select your Level Editor the 1st time you use this tool.
+
+     . To TRWEST users :		- You can use this tool w/o any restriction
+				- remember that each time you regenerate your WAD with TRWEST, 
+				you need to recreate SFX files with this tool.
+
+     . To WADMERGER users :	- Sounds coming from other TR are not recognized by this program
+				and are lost. But, you can re-incorporate such sounds using Wadmerger again.
+				I suggest to create temporary Wads containing objects using non TRLE sounds
+				in order to copy them back to the Wad after using this tool.
+
+--------------------------------------------------------------------
+* How this program works :
+--------------------------------------------------------------------
+
+This program allows you to add and remove sounds from your wads. In fact, it works only on SAM and SFX files, and sounds.txt.
+It's also based on a Letter which represents the WAD you're working on. This information is important and must be entered. See next chapter.
+
+The "sounds.txt" file is loaded each time you run this program. If the indicated letter is found inside "sounds.txt", the label ":[OK]" is displayed at the end of each corresponding line in the "Sound ID" list.
+General sounds represented by "#g" always have ":[OK]" at the end of the line. But this label is hidden by default. To see it, press on the "eye" icon.
+
+     . Select a sound in the [Sound ID] list or search it by this way :
+
+	- Prepare the research :
+		. Type a partial text or a ID number in the search textbox
+		. To only search for the next allocated sounds, click on [OK] 
+		. Choose the direction of the research (Down or Up)
+	- Perform the research :
+		. Press the <search> button (binoculars)
+		. Press again to keep searching the text on the indicated direction
+
+
+     . The [Allocated WADs (letters)] list shows the WADs that use the selected sound.
+
+	- "??" means that the letter is not recognized by the program (not important),
+	- Otherwise, you will see the letter followed by the name of the WAD (Standard or not).
+	- [All Wads] means the sound is always allocated.
+
+
+--------------------------------------------------
+* Working on sounds :
+--------------------------------------------------
+
+Start by selecting a WAD on which you're working. If no WAD is available, click on [Manage WAD/Letter Reference] button below WAD name in order to add a new reference.
+
+NOTE :	- This program is sensitive to Upper/Lower case. So "H" and "h" don't represent the same WAD.
+
+Select which file you want to load :
+	- SAM file containing all the samples names included by Trwest or Wadmerger
+	- WAS file containing all the object names included by Trwest or Wadmerger
+
+NOTE : if you decide to load the WAS file, some sounds may not be assigned. This is due to the lack of informations included in this file. For example, if there are some objects for which sounds have been added or changed in their animations via Wadmerger, they won't be notified. It's the same for ANIMATING objects which can have specific sounds. It's up to you to add sounds via this program after WAS file is loaded.
+
+Then, click on <Load file> (folder) to automatically show sounds already allocated to the WAD. Now, you're ready to work on sounds.
+
+
+>1st case : assign the letter (WAD) sound by sound : select the sound in [Sound ID] list.
+
+     . To add the sound to the wad : press <Add letter> (+) to assign the letter to the selected sound. [:OK] will appear.
+     . To remove the sound from the wad : select an Allocated letter in the list and press <Remove letter> (-). [:OK] will disappear.
+
+
+>2nd case : assign the letter (WAD) by object :
+
+     . Click on <Show objects> to open the objects selection window. Click again on this icon to close window.
+	- In this new window, choose a category (ennemies, friends, vehicles, ...) and select an object.
+	- You can click on an ID, and the main window will go to the corresponding sound.
+	- Then, click on <Select object> (pencil) to display the name of the selected object in the main window.
+	  You can also double click on the object to select it.
+     . To add the object to the wad : press <Add letter> (+) to automatically add ALL the corresponding sounds of the object.
+     . To remove the object from the wad : press <Remove letter> (-) to erase ALL its corresponding sounds.
+
+
+Press <Show/Hide #g sounds> (eye) to see on the [Sound ID] list all the sounds always allocated for every wads.
+
+Press again <Show/Hide #g sounds> to not display general sounds (it doesn't remove them).
+
+Press <Remove letter> (recycled) to remove the letter from all sounds.
+
+
+--------------------------------------------------
+* Working on samples values :
+--------------------------------------------------
+
+To change the values of each sound, type the new ones in each field in the [Sample Values] frame.
+See below to know what's the meaning of each value.
+Only the PIT field accepts negative values. Then click on <Accept values> (green arrow) to apply the new values to the line.
+
+You can also listen to each sample. To do this, select a sample in [samples names] list and click on <Play>
+
+It's also possible to rename samples names. This function is used if you want to create your own samples, for example, in order to not overwrite the original ones. To rename a sample, select it in the list and type a new name in the next field. Then click on <Rename> (pencil). The new sample must exist in \trle\sound\samples\ directory and be in the right format PCM 22050Khz 16bits mono. All names modifications are stored for each different wad.
+
+You can also add and remove a sample from the existing samples list. SFX Manager will check the sum of the lengths of all samples which may not exceed 32 characters, spaces included.
+
+If you want to cancel all the modifications made to a sound line, press <Restore line> (orange arrow) at the bottom right of the window.
+
+
+What samples values mean :
+--------------------------------------------
+VOL	- Volume    	: Enter a value from 01 to 99
+V	- Random Volume	: A sound with V will have a random slight volume change each time it is played.
+CH	- Chance    	: CH is the chance of the sound to be played when triggered. The smaller the CH number
+			  the less it will be played. If no CH is included in this column the sound will play
+			  every time it is triggered
+PIT	- Pitch		: PIT followed by a positive number raises the pitch, PIT followed by a negative number
+			  lowers the pitch. Leave the PIT out and no pitch change will occur.
+P	- Random Pitch	: A sound with P will have a random slight pitch change each time it is played.
+RAD	- Radius    	: This value determines from how far away the sound can still be heard.
+			  The higher the number the further away the sound can still be heard.
+R	- Random Radius	: A sound with R will have a random slight radius/range change each time it is played.
+L	- Loop		: This needs to be assigned if you want a sample to play over and over again like waterfalls.
+N	- N/A        	: Non applied.
+
+P and V are used in cases where a sample tends to be repeated very often, which would sound too mechanical if it were repeated exactly the same way all the time.
+
+
+--------------------------------------------------
+* Apply modifications
+--------------------------------------------------
+
+Press <Apply changes> (green notch) to definetely apply your changes to the [Sounds.txt] file.
+
+	- A backup of [Sounds.txt] is made the first time you use this tool
+	- this backup is named [Orig_Sounds.txt] and is placed in the same folder as [Sounds.txt].
+
+
+To recover an original file, press the <Restore defaults> button (HDD with arrow). This function doesn't recover the [Orig_Sounds.txt] already created, but regenerate an original [Sounds.txt] from the one supplied with trle. All the modifications made in the program will be lost, but you can reload your SAM/WAS file and recover almost all the informations.
+
+You can also restore the original \Samples directory and SAM/SFX files by the same funtion. The original directories, named \Samples_ORIG and \SFX_ORIG should be installed with SFX Manager in the same directory.
+
+Before restoring defaults, it's advisable to have a backup of your \sound and \wads directories.
+
+--------------------------------------------------------------------
+* Open Sounds.txt file manually :
+--------------------------------------------------------------------
+
+Press <Open sound.txt> (notepad) to open [Sounds.txt] with your NOTEPAD.EXE from Windows. This function allows you to see all the modifications made to this file before you generate SAM and SFX files.
+
+IMPORTANT : if you make some modifications inside this file, respect this :
+
+	- never move the informations inside each line. Don't add any spaces or tabulations.
+	- never replace tabulations by spaces & vice versa
+	- do not change the name of the sound at the begining of the line
+	- do not add or remove any line in the file
+	- do not enter any sample names with spaces or special characters
+
+All the mistakes made in this file could create bugs in the generated SFX file. Sounds would not play correctly in the game
+
+
+--------------------------------------------------------------------
+* Create and copy the SAM and SFX files :
+--------------------------------------------------------------------
+
+Press <Generate SFX file> (speaker) to perform.
+
+SAM and SFX files will be generated using [pcwadsfx.exe]. Then, they will be automatically copied to the \graphics\wads\ folder.
+
+Now, you can test your level to listen to your modifications.
+
+IMPORTANT : if some samples have been renamed which means you imported and/or worked on them, you should know they must be in the right format PCM 22050Khz 16 bits mono. You can easily check all the samples of the \sound\Samples directory by clicking on the 4th button on the top left of the main window.

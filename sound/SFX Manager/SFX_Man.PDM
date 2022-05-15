@@ -1,0 +1,200 @@
+[Root]
+Most Recent Package=Logiciel d'installation standard 2
+
+
+[Package|Logiciel d'installation standard 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Pascal\Projets\SFX Manager\Package
+
+[Package|Logiciel d'installation standard 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard 1|Files Found]
+
+[Package|Logiciel d'installation standard 1|Files Released]
+
+[Package|Logiciel d'installation standard 1|Missing Dependency Information]
+
+[Package|Logiciel d'installation standard 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\comdlg32.ocx=
+
+[Package|Logiciel d'installation standard 1|Files Added]
+C:\Pascal\Projets\SFX Manager\SFX_eng1.txt=
+C:\Pascal\Projets\SFX Manager\SFX_fra1.txt=
+C:\Pascal\Projets\SFX Manager\SFX_Man.tow=
+
+[Package|Logiciel d'installation standard 1|Files Removed]
+
+[Package|Logiciel d'installation standard 1|Files In Project]
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\vb6fr.dll=Yes
+C:\WINDOWS\system32\comdlg32.ocx=Yes
+C:\WINDOWS\system32\CMDLGFR.DLL=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Pascal\Projets\SFX Manager\SFX_eng1.txt=Yes
+C:\Pascal\Projets\SFX Manager\SFX_fra1.txt=Yes
+C:\Pascal\Projets\SFX Manager\SFX_Man.tow=Yes
+
+[Package|Logiciel d'installation standard 1|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 1|Install Locations]
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Microsoft\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vb6fr.dll=$(WinSysPath)
+C:\WINDOWS\system32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGFR.DLL=$(WinSysPath)
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Pascal\Projets\SFX Manager\SFX_eng1.txt=$(AppPath)
+C:\Pascal\Projets\SFX Manager\SFX_fra1.txt=$(AppPath)
+C:\Pascal\Projets\SFX Manager\SFX_Man.tow=$(AppPath)
+
+[Package|Logiciel d'installation standard 1|Configure Shared Files]
+Applicable=Yes
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=No
+C:\Pascal\Projets\SFX Manager\SFX_eng1.txt=No
+C:\Pascal\Projets\SFX Manager\SFX_fra1.txt=No
+C:\Pascal\Projets\SFX Manager\SFX_Man.tow=No
+
+[Package|Logiciel d'installation standard 1|Distribution]
+Type=single
+Size=
+Title=SFX_Manager for TRLE
+
+[Package|Logiciel d'installation standard 1|IconGroups]
+Group0=SFX_Manager for TRLE
+PrivateGroup0=Vrai
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 1|SFX_Manager for TRLE]
+Icon1=SFX_Man.exe
+Title1=SFX_Manager for TRLE
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 1|Package]
+PackageFolder=C:\Pascal\Projets\SFX Manager\Package
+ProjectFolder=C:\Pascal\Projets\SFX Manager
+ServerSideCab=
+File1=C:\Pascal\Projets\SFX Manager\Package\setup.exe
+File2=C:\Pascal\Projets\SFX Manager\Package\Setup.Lst
+File3=C:\Pascal\Projets\SFX Manager\Package\SFX_Man.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Logiciel d'installation standard 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Pascal\Projets\SFX Manager\Package
+
+[Package|Logiciel d'installation standard 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard 2|Files Found]
+
+[Package|Logiciel d'installation standard 2|Files Released]
+
+[Package|Logiciel d'installation standard 2|Missing Dependency Information]
+
+[Package|Logiciel d'installation standard 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\COMDLG32.OCX=
+
+[Package|Logiciel d'installation standard 2|Files Added]
+
+[Package|Logiciel d'installation standard 2|Files Removed]
+
+[Package|Logiciel d'installation standard 2|Files In Project]
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=Yes
+C:\WINDOWS\system32\MSVBVM60.DLL=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\vb6fr.dll=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\CMDLGFR.DLL=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Microsoft\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard 2|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard 2|Install Locations]
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=$(AppPath)
+C:\WINDOWS\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Microsoft\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\vb6fr.dll=$(WinSysPath)
+C:\WINDOWS\system32\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\system32\CMDLGFR.DLL=$(WinSysPath)
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Microsoft\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Microsoft\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard 2|Configure Shared Files]
+Applicable=Yes
+C:\Pascal\Projets\SFX Manager\SFX_Man.exe=No
+
+[Package|Logiciel d'installation standard 2|Distribution]
+Type=single
+Size=
+Title=SFX_Man
+
+[Package|Logiciel d'installation standard 2|IconGroups]
+Group0=SFX_Man
+PrivateGroup0=Vrai
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard 2|SFX_Man]
+Icon1=SFX_Man.exe
+Title1=SFX_Man
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard 2|Package]
+PackageFolder=C:\Pascal\Projets\SFX Manager\Package
+ProjectFolder=C:\Pascal\Projets\SFX Manager
+ServerSideCab=
+File1=C:\Pascal\Projets\SFX Manager\Package\setup.exe
+File2=C:\Pascal\Projets\SFX Manager\Package\Setup.Lst
+File3=C:\Pascal\Projets\SFX Manager\Package\SFX_Man.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
