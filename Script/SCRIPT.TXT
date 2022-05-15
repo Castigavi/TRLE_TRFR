@@ -39,7 +39,7 @@ LoadSave=		ENABLED
 Title=		ENABLED
 ;PlayAnyLevel=	ENABLED
 InputTimeout=	18000		; frames * seconds = 60x30
-;FlyCheat=		ENABLED
+FlyCheat=		ENABLED
 Security=		$55
 DemoDisc=		DISABLED
 WorldFarView=	127
