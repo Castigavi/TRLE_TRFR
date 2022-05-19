@@ -58,3 +58,10 @@ GlobalTrigger=	51, IGNORE,GT_CONDITION_GROUP, IGNORE, 25, 26, IGNORE
 
 
 GlobalTrigger=	52, FGT_SINGLE_SHOT, GT_ALWAYS, IGNORE, IGNORE, 28, IGNORE ; play triggergroup 1 then disable
+
+;-----------------------------------------------------------------------------
+;SARCOPHAGUS FIX
+;-----------------------------------------------------------------------------
+;TriggerGroup= 32, $8000,439,$001E ;check if Lara plays animation 439
+;TriggerGroup= 33, $2000,80,$00DA ;play animation 475
+;GlobalTrigger= 53, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33

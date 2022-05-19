@@ -134,6 +134,6 @@ GlobalTrigger=	50, IGNORE,GT_ALWAYS, IGNORE, 30, 31, IGNORE
 ;-----------------------------------------------------------------------------
 ;SARCOPHAGUS FIX
 ;-----------------------------------------------------------------------------
-TriggerGroup= 32, $8000,439,$001E ;check if Lara plays animation 439
-TriggerGroup= 33, $2000,80,$00DA ;play animation 474
-GlobalTrigger= 51, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33
+;TriggerGroup= 32, $8000,475,$001E ;check if Lara plays animation 439
+;TriggerGroup= 33, $2000,80,$00DA ;play animation 474
+;GlobalTrigger= 51, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33
