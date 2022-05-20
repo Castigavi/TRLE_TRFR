@@ -47,6 +47,7 @@ ShowLaraInTitle=ENABLED
 Diagnostic=	ENABLED
 ;DiagnosticType=	DGX_CHEATS, IGNORE
 DiagnosticType=	DGX_SFX_SOUNDS+DGX_CHEATS, IGNORE
+Plugin= 1, PlugIn_footprints, IGNORE
 ;Settings=		SET_ACCEPT_EXTRA_TAILINFOS
 
 ;--------------------------------------

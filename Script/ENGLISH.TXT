@@ -381,4 +381,5 @@ THE LAST STRING ENTRY
 10: Automatic FOV by JoeyQuint v1.0.0.0
 11: Plugin_AutomaticFov
 12: Plugin_AutomaticFov.dll
+13: PlugIn_footprints
 
