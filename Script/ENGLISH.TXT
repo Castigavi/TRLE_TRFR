@@ -382,4 +382,5 @@ THE LAST STRING ENTRY
 11: Plugin_AutomaticFov
 12: Plugin_AutomaticFov.dll
 13: PlugIn_footprints
+14: Plugin_ChocolateFanFlareSFX
 

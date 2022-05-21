@@ -36,3 +36,10 @@ Customize=			CUST_FOOTPRINT, TEXTURE_SOUND_MUD, -1, -1, -1, -1, -1, -1
 Customize=			CUST_FOOTPRINT, TEXTURE_SOUND_SNOW, -1, -1, -1, -1, -1, -1
 Customize=			CUST_FOOTPRINT, TEXTURE_SOUND_GRAVEL, -1, -1, -1, -1, -1, -1
 Customize=			CUST_FOOTPRINT, TEXTURE_SOUND_SAND, -1, -1, -1, -1, -1, -1
+
+;============================================================================
+;   Flare SFX Plugin Setup
+;============================================================================
+
+GlobalTrigger=  100, FGT_SINGLE_SHOT, GT_ALWAYS, IGNORE, IGNORE, 100, IGNORE
+TriggerGroup=   100, $022000, 3, $415, $022000, 3, $516, $022000, 3, $617, $022000, 3, $718, $022000, 3, $19, $022000, 3, $11A, $022000, 5, $0, $022000, 5, $2, $022000, 7, $0, $022000, 7, $1, $022000, 7, $2, $022000, 7, $3

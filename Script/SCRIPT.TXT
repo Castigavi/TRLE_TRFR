@@ -48,6 +48,7 @@ Diagnostic=	ENABLED
 ;DiagnosticType=	DGX_CHEATS, IGNORE
 DiagnosticType=	DGX_SFX_SOUNDS+DGX_CHEATS, IGNORE
 Plugin= 1, PlugIn_footprints, IGNORE
+Plugin= 2, Plugin_ChocolateFanFlareSFX, IGNORE
 ;Settings=		SET_ACCEPT_EXTRA_TAILINFOS
 
 ;--------------------------------------
