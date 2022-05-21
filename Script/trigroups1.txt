@@ -62,6 +62,11 @@ GlobalTrigger=	52, FGT_SINGLE_SHOT, GT_ALWAYS, IGNORE, IGNORE, 28, IGNORE ; play
 ;-----------------------------------------------------------------------------
 ;SARCOPHAGUS FIX
 ;-----------------------------------------------------------------------------
-;TriggerGroup= 32, $8000,439,$001E ;check if Lara plays animation 439
-;TriggerGroup= 33, $2000,80,$00DA ;play animation 475
-;GlobalTrigger= 53, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33
+TriggerGroup=  32, $8000,439,$001E ;check if Lara plays animation 439
+TriggerGroup=  33, $2000,127,$0001 ;enable organizer 1
+GlobalTrigger= 53, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33
+Organizer=     1, FO_TICK_TIME, -1, 0, 34, 110, 35, 39, 18, 1, 37 ; do TG 34, then after 110 frames do TG 35, then after 39 frames do TG 18, then after 1 frame do TG 37
+TriggerGroup=  34, $2000,80,$00DA ;play animation 474
+TriggerGroup=  35, $2000,48,$0138; add PICKUP_ITEM1 to inventory
+; open diary entry is triggergroup 18
+TriggerGroup=  37, $5000,1576,$002D, $5000,998,$011A, $5000,997,$011A ; trigger Flyby sequence 1576 and open doors (997 and 998)
