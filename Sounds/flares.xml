@@ -4,7 +4,7 @@
     <WadSoundInfo>
       <Id>285</Id>
       <Name>OBJ_GEM_SMASH</Name>
-      <Volume>20</Volume>
+      <Volume>0</Volume>
       <RangeInSectors>10</RangeInSectors>
       <Chance>100</Chance>
       <PitchFactor>60</PitchFactor>
@@ -14,7 +14,7 @@
       <LoopBehaviour>None</LoopBehaviour>
       <Samples>
         <WadSample>
-          <FileName>ah_die.wav</FileName>
+          <FileName>crysmash.wav</FileName>
         </WadSample>
       </Samples>
       <Global>true</Global>
