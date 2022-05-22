@@ -1,0 +1,15 @@
+This plugin gives Lara the ability to leave customizable footprints behind her on selected floors.
+
+Using:
+Footprints use flipeffect 32 as an anim command. To set it:
+In wadtool, add an anim command to play flipeffect 32 on the desired frame, and choose the correct foot in the "Condition" box.
+Most of the needed animations (running, walking, etc.) in the default assets already have this flipeffect set. You are free to add or remove any of them as you wish.
+
+--------------------------------------------------------------
+Customization:
+Customizing the footprints is done through TRNG scripting, via CUST_FOOTPRINT.
+In addition, two flipeffects are available to customize the footprints while the game is running.
+
+--------------------------------------------------------------
+Select Footprint Sprite Guide to learn how to create a footprint sprite.
+This guide was made by LoreRaider.

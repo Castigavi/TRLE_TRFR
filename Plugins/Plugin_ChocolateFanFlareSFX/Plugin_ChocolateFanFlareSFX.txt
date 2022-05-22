@@ -1,0 +1,10 @@
+This plugin brings back two flare effects that were present in TR2 and TR3: sound and bubbles.
+
+The first three flipeffects can assign samples, whilst the fourth removes them.
+But the OBJ_GEM_SMASH sample is still hardcoded to play when a flare is igniting.
+Note that the sample assigned to burning flares must have the L flag in Sounds.txt.
+
+The remaining flipeffects can enable or disable:
+
+- Bubble generation when the flare is underwater;
+- Synchronization between light and sound/bubbles.
