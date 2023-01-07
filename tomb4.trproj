@@ -3,7 +3,7 @@
   <Name>trle_trfr</Name>
   <GameVersion>TRNG</GameVersion>
   <DefaultLanguage>English</DefaultLanguage>
-  <LaunchFilePath>$(ProjectDirectory)\launch.exe</LaunchFilePath>
+  <LaunchFilePath>$(ProjectDirectory)\PLAY.exe</LaunchFilePath>
   <ScriptPath>$(ProjectDirectory)\Script</ScriptPath>
   <LevelsPath>$(ProjectDirectory)\Levels</LevelsPath>
   <Levels>
