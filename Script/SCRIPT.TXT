@@ -39,12 +39,12 @@ LoadSave=		ENABLED
 Title=		ENABLED
 ;PlayAnyLevel=	ENABLED
 InputTimeout=	18000		; frames * seconds = 60x30
-FlyCheat=		ENABLED
+FlyCheat=		DISABLED
 Security=		$55
 DemoDisc=		DISABLED
 WorldFarView=	127
 ShowLaraInTitle=ENABLED
-Diagnostic=	ENABLED
+Diagnostic=	DISABLED
 ;DiagnosticType=	DGX_CHEATS, IGNORE
 DiagnosticType=	DGX_SFX_SOUNDS+DGX_CHEATS, IGNORE
 Plugin= 1, PlugIn_footprints, IGNORE
@@ -104,7 +104,8 @@ Name=			Lux Veritatis Sanctum
 Horizon=		enabled
 Rain=			RAIN_ALL_OUTSIDE
 Layer1=		56,72,8,16
-LoadCamera=	8702,-1026,9726,8702,-1026,8702,100
+;LoadCamera=	8702,-1026,9726,8702,-1026,8702,100
+LoadCamera= 0,0,0,0,0,0,255
 Level=		DATA\LVL1,003
 #INCLUDE "anims.txt"
 #INCLUDE "diary.txt"
