@@ -1,0 +1,14 @@
+This plugin cannot be used directly.
+It is only called by other plugins.
+
+-------------------------------------------------------------------------------
+  Installation
+-------------------------------------------------------------------------------
+
+Copy the file Plugin_ObjectHelper.dll into the TRLE folder.
+
+-------------------------------------------------------------------------------
+  Uninstallation
+-------------------------------------------------------------------------------
+
+Delete the file Plugin_ObjectHelper.dll from the TRLE folder.

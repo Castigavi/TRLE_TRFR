@@ -5,26 +5,29 @@ Skeletons in the second level can be killed by just shooting them.
 Sometimes Lara may not want to do things like shimmying through corners or grabbing ladders. This is because TR4 engine doesn't always realise Lara's animation has ended. If such problem occurs, stand still for a while and press space to take out the weapons. This should solve the issue - this should be fixed in current (v4) version though.
 
 ######################################################################
-#TOMB RAIDER FORGOTTEN REMNANTS - UPDATED VERSION 4 CHANGELIST(february 2021)
+#VERSION 5 CHANGELIST (January 2023)
 ######################################################################
 
+- Migrated to the newest TIDE version (compatible with Windows 11)
+- Updated FLEP version (no false-positives)
+- Added footprints plugin
+- Added TR1-2 Enemies Conversion Plugin
+- Added Flare plugin and updated flares with sounds
+- Fixed LARA Object (now it is shared between levels) & Hub issues
+- Fixed multiple ladder issues
+- Fixed graphical glitches in Mines level
+- Removed few illegal slopes
+- Fixed lasersight mesh inaccuracy
+- Replaced enemy models in the Mines level with higher quality ones & added TR2 rats behavior
+
+VERSION 4 CHANGELIST:
 - New standing animation by GeckoKid
 - Fixed roll and jump in mid air
 - Added set free hands command to some animations in the first level
 - Restored original TR4 combat camera
 - Fixed softlock
 
-######################################################################
-UPDATED VERSION 2 CHANGELIST:
-- New waterfall and fire effects instead of FLEP-particles
-- Fixed bugs from the original version
-- New and improved static objects in the second level
-- Small texture-detail changes in the second level
-- Small gameplay changes in the second level
-- More music and better camera sequences
-- Added widescreen/FOV fix by JoeyQuint
-
-UPDATED VERSION 3 CHANGELIST:
+VERSION 3 CHANGELIST:
 The updated version 3 contains all the changes from the second version, but also:
 - Brings back FLEP-exclusive features
 - Fixes red flare lighting
@@ -37,28 +40,27 @@ The updated version 3 contains all the changes from the second version, but also
 - Lara's smooth shadow and different blending modes are back
 - Shine sprite textures are different for inventory and ingame objects
 
-######################################################################
-#AUTHORS and TESTERS
-######################################################################
-Author: Caesum (pmkkoch)
-Testers: Cannibal, Ceamonks890, DVDSpike & krtomb, klona, Dejan
+VERSION 2 CHANGELIST:
+- New waterfall and fire effects instead of FLEP-particles
+- Fixed bugs from the original version
+- New and improved static objects in the second level
+- Small texture-detail changes in the second level
+- Small gameplay changes in the second level
+- More music and better camera sequences
+- Added widescreen/FOV fix by JoeyQuint
 
 ######################################################################
-#THANKS TO:
+#CREDITS:
 ######################################################################
-teme9, Horus-Goddess, Piega, BARRY, Sorata, Level NextGen, Miramar, Devoid, Tomb Laraider, trix, uranos, Trinity, Lara's Boyfriend, tomb2player, PeeT, I.M., usuki_frenzist, maixhunk, mike quahe, karlo002, white tiger, mr xy, human, MissKroft, Trangel, Po Yu, uranos1, Horus, Josep Borruts, maax_87, Harrys, kurtisandlara, Dino, Symsi, Dino14, Spongebob, A_De, Zolee, Tomb Laraider, GeckoKid, -=DeMoS=-, l.m., daledrau
+
+Author: Caesum (pmkkoch)
+Testers: Cannibal, Ceamonks890, DVDSpike, krtomb, klona, Dejan, loreraider
+
+Assets & help: teme9, Horus-Goddess, Piega, BARRY, Sorata, Level NextGen, Miramar, Devoid, Tomb Laraider, trix, uranos, Trinity, Lara's Boyfriend, tomb2player, PeeT, I.M., usuki_frenzist, maixhunk, mike quahe, karlo002, white tiger, mr xy, human, MissKroft, Trangel, Po Yu, uranos1, Horus, Josep Borruts, maax_87, Harrys, kurtisandlara, Dino, Symsi, Dino14, Spongebob, A_De, Zolee, Tomb Laraider, GeckoKid, -=DeMoS=-, l.m., daledrau, Chocolate, TokyoSU, Loreraider, LGG_PRODUCTION, THOR2010
 
 Special thanks to thatnorskchick2 for her fabulous TRAOD theme piano cover.
 
-Also thanks to tombraiderforums.com and tombraiderforum.tcz.pl for the support. Without you this level would never be completed!
-
-If I forgot to list someone then do tell me and I will add you to the list in this topic:
-http://www.tombraiderforums.com/showthread.php?t=202592
-
-The objects made for forgotten remnants can be downloaded here: https://www.trsearch.org/item/4370
-Old standing animation can be downloaded here: https://www.trsearch.org/item/4371
-
-Textures and images taken from:
+Some assets were taken from other games:
 Gothic
 Gothic 2
 Gothic 3
@@ -70,4 +72,5 @@ Prince of Persia: Warrior Within
 cgtextures.com
 Back to Basics: Steampunk
 
-Follow me on twitter to learn more about my current projects: https://twitter.com/Caesum
+The objects made for forgotten remnants can be downloaded here: https://www.trsearch.org/item/4370
+Old standing animation can be downloaded here: https://www.trsearch.org/item/4371
