@@ -131,6 +131,16 @@ GlobalTrigger=	50, IGNORE,GT_ALWAYS, IGNORE, 30, 31, IGNORE
 ; (E) : 
 ; Values to add in script command: $2000, 47, $44
 
-;GlobalTrigger=  51, IGNORE, GT_CONDITION_GROUP, IGNORE, 32, 33, -1; Force animation 474 when Lara is using SARCOPHAGUS
-;TriggerGroup=   32, $8000, 439, $1E              ; Check if Lara is performing animation 439
-;TriggerGroup=   33, $2000,80,$00DA             ; Force animation 474
+;-----------------------------------------------------------------------------
+;SARCOPHAGUS FIX
+;-----------------------------------------------------------------------------
+;TriggerGroup= 32, $8000,475,$001E ;check if Lara plays animation 439
+;TriggerGroup= 33, $2000,80,$00DA ;play animation 474
+;GlobalTrigger= 51, -1, GT_CONDITION_GROUP, -1, 32, 33, -1 ; if 32 is true then do 33
+
+;-----------------------------------------------------------------------------
+;FIXED teeth spike puzzle
+;-----------------------------------------------------------------------------
+Triggergroup=	32, $9000,87,$0215 ; if JUMP_SWITCH is playing animation 2
+Triggergroup=	33, $5000+TGROUP_SINGLE_SHOT,103,$011A, $2000,118,$013F; Open Door 103 and play music
+GlobalTrigger=	51, IGNORE,GT_CONDITION_GROUP, IGNORE, 32, 33, IGNORE

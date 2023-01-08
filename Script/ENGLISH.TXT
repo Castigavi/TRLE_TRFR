@@ -1,3 +1,7 @@
+; Automatically generated document using TombIDE 1.4.8
+; Do not add any comments into this document as they are
+; going to be removed next time the file is regenerated.
+
 [Strings]
 @Format_Savegames.txt
 Germany, 2004
@@ -8,7 +12,7 @@ Abandoned Mines
 Lift Plug
 Crucifix
 Kitchen Key
-Little Wheel
+Cog
 Tomb Key
 Arial
 Lux Veritatis Sword
@@ -203,6 +207,7 @@ Inventory
 RULES1:To win the game, get all your pieces off the\nboard by landing them on the final ankh\nsquare. On your turn spin the sticks. Your\n throw is the number of white sides showing.
 RULES2:If no white sides show, your throw is a six.\nIf you throw a six or land on an ankh square\nyou get an extra turn. If you land on an\nopponent's piece, it is returned to the start
 PETEPOO:For the serpents to live,\nall must first be stilled.\nprovoke each in turn,\nand the circle will burn\ncomplete.
+
 [PSXStrings]
 BSELECT:\x8F Select
 BCANCEL:\x90 Cancel
@@ -300,6 +305,7 @@ TEAM37:Jeremy H. Smith
 TEAM38:Adrian Smith
 TEAM39:Clint Nembhard
 TEAM40:Benjamin Twose
+
 [PCStrings]
 PC Programmer
 Programmers
@@ -331,7 +337,7 @@ Low Resolution Textures
 Low Resolution Bump Maps
 Sound Device
 Disable
-Bit\t\t\t; As In 16 Bit
+Bit\t\t\t
 Full Screen
 Windowed
 Render Options
@@ -360,6 +366,7 @@ Select Level
 No FMV
 OEM1:\n\n\nCongratulations on reaching the end\nof this special version of the game.\nIf you want to continue Lara's adventure,\nyou need to purchase the full version.\nRemember to keep your save game files,\nto continue from where you are now.\nFor details of transferring your save game\nfiles refer to the readme file,\nthis is accessed via the task bar.
 THE LAST STRING ENTRY
+
 [ExtraNG]
 0: @page1.txt
 1: @eck_p1.txt
@@ -371,6 +378,14 @@ THE LAST STRING ENTRY
 7: @page7.txt
 8: @page8.txt
 9: @page9.txt
-10: Automatic FOV by JoeyQuint v1.0.0.0
-11: Plugin_AutomaticFov
-12: Plugin_AutomaticFov.dll
+10: PlugIn_footprints
+11: PlugIn_footprints.dll
+12: Plugin_ChocolateFanFlareSFX
+13: Plugin_ChocolateFanFlareSFX.dll
+14: NULL
+15: NULL
+16: NULL
+17: Plugin_TokyoSU
+18: Plugin_ObjectHelper
+19: Plugin_TR1
+

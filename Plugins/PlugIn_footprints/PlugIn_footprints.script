@@ -1,0 +1,18 @@
+<START_CONSTANTS>
+TEXTURE_SOUND_MUD:0
+TEXTURE_SOUND_SNOW:1
+TEXTURE_SOUND_SAND:2
+TEXTURE_SOUND_GRAVEL:3
+TEXTURE_SOUND_ICE:4
+TEXTURE_SOUND_WATER:5
+TEXTURE_SOUND_STONE:6
+TEXTURE_SOUND_WOOD:7
+TEXTURE_SOUND_METAL:8
+TEXTURE_SOUND_MARBLE:9
+TEXTURE_SOUND_GRASS:10
+TEXTURE_SOUND_CONCRETE:11
+TEXTURE_SOUND_OLD_WOOD:12
+TEXTURE_SOUND_OLD_METAL:13
+
+CUST_FOOTPRINT:1 ;Used with Customize command.>Syntax: Customize=CUST_FOOTPRINT, TextureSound, BlendMode, SpriteSlot, SpriteIndex, Duration, FadeOut, Alignment>>You can use one such command per texture sound.>>TextureSound>------------>The texture sound that is being customized.>>See the TEXTURE_SOUND_ constants.>>BlendMode>--------->The blend mode to use in the drawing of the footprint.>>Type IGNORE to use the default value (5).>>Note: the New blending modes patch in FLEP must be enabled.>>SpriteSlot>---------->The slot that contains the footprint sprite.>>Type IGNORE to use the default value (DEFAULT_SPRITES).>>SpriteIndex>----------->The index of the footprint sprite.>>Type IGNORE to use the default value (10).>>Note: the footprint sprite must be triangular and at the top left corner, oriented to the diagonal, in the same way as the original.>>Duration>-------->The time, in game cycles, before the footprint is removed.>>Type IGNORE to use the default value (512).>>Note: 30 game cycles are equivalent to one second.>>FadeOut>------->The time, in game cycles, in which the footprint fades out.>>Type IGNORE to use the default value (28).>>Note: FadeOut must be smaller or equal than Duration.>>Alignment>--------->ENABLED : the footprint aligns itself to the floor.>DISABLED: the footprint is always straight.>>Type IGNORE to use the default value (ENABLED).
+<END>
