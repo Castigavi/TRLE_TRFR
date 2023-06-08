@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>trle_trfr</Name>
-  <GameVersion>TRNG</GameVersion>
-  <DefaultLanguage>English</DefaultLanguage>
-  <LaunchFilePath>$(ProjectDirectory)\PLAY.exe</LaunchFilePath>
-  <ScriptPath>$(ProjectDirectory)\Script</ScriptPath>
-  <LevelsPath>$(ProjectDirectory)\Levels</LevelsPath>
-  <Levels>
-    <ProjectLevel>
-      <Name>lvl1</Name>
-      <FolderPath>$(ProjectDirectory)\Levels\lvl1</FolderPath>
-      <SpecificFile>$(LatestFile)</SpecificFile>
-    </ProjectLevel>
-    <ProjectLevel>
-      <Name>lvl2</Name>
-      <FolderPath>$(ProjectDirectory)\Levels\lvl2</FolderPath>
-      <SpecificFile>$(LatestFile)</SpecificFile>
-    </ProjectLevel>
-    <ProjectLevel>
-      <Name>title</Name>
-      <FolderPath>$(ProjectDirectory)\Levels\title</FolderPath>
-      <SpecificFile>$(LatestFile)</SpecificFile>
-    </ProjectLevel>
-  </Levels>
+	<Name>trle_trfr</Name>
+	<GameVersion>TRNG</GameVersion>
+	<DefaultLanguage>English</DefaultLanguage>
+	<LaunchFilePath>$(ProjectDirectory)\PLAY.exe</LaunchFilePath>
+	<ScriptPath>$(ProjectDirectory)\Script</ScriptPath>
+	<LevelsPath>$(ProjectDirectory)\Levels</LevelsPath>
+	<Levels>
+		<ProjectLevel>
+			<Name>lvl1</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\lvl1</FolderPath>
+			<SpecificFile>$(LatestFile)</SpecificFile>
+		</ProjectLevel>
+		<ProjectLevel>
+			<Name>lvl2</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\lvl2</FolderPath>
+			<SpecificFile>$(LatestFile)</SpecificFile>
+		</ProjectLevel>
+		<ProjectLevel>
+			<Name>title</Name>
+			<FolderPath>$(ProjectDirectory)\Levels\title</FolderPath>
+			<SpecificFile>$(LatestFile)</SpecificFile>
+		</ProjectLevel>
+	</Levels>
 </Project>
