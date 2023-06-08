@@ -5,6 +5,12 @@ Skeletons in the second level can be killed by just shooting them.
 Sometimes Lara may not want to do things like shimmying through corners or grabbing ladders. This is because TR4 engine doesn't always realise Lara's animation has ended. If such problem occurs, stand still for a while and press space to take out the weapons. This should solve the issue - this should be fixed in current (v4) version though.
 
 ######################################################################
+#VERSION 6 HOTFIX CHANGELIST (June 2023)
+######################################################################
+
+- Fixed skeletons and doors not activating after picking up the crucifix in level 2
+
+######################################################################
 #VERSION 5 CHANGELIST (January 2023)
 ######################################################################
 
